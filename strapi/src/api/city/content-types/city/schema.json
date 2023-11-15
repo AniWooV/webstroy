@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nameCase": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::region.region",
+      "inversedBy": "cities"
+    }
+  }
+}
