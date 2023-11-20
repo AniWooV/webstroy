@@ -4,8 +4,10 @@ interface ProjectProps {
     }
 }
 
-function Project({params}: ProjectProps) {
-    return ( <div>Project - {params.slug}</div> );
+function Project(props: ProjectProps) {
+    console.log(props);
+    
+    return ( <div>Project - {props.params.slug}</div> );
 }
 
 export default Project;

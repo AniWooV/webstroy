@@ -1,0 +1,9 @@
+{
+	"home": "",
+	"about": "/about",
+	"services": "/services",
+	"service": "/services/:slug",
+	"portfolio": "/portfolio",
+	"project": "/portfolio/:slug",
+	"contacts": "/contacts"
+}

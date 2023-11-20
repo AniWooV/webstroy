@@ -1,8 +1,8 @@
 {
     "home": [
-        "/c-:city",
-        "/l-:lang",
-        "/c-:city/l-:lang"
+        "/:city(perm|irbit)",
+        "/:lang(en|ru)",
+        "/:city(perm|irbit)/:lang(en|ru)"
     ],
     "about": [
         "/c-:city/about",

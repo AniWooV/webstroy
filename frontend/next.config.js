@@ -1,6 +1,34 @@
 /** @type {import('next').NextConfig} */
 
-const routes = require("./settings/routes.json")
+const routesBase = require("./settings/routes-base.json")
+const routesParams = require("./settings/routes-params.json")
+
+function getRegex(params) {
+	return `(${params.join("|")})`
+}
+
+function generateRoutes() {
+	const definedRoutes = {}
+
+	for (let route in routesBase) {
+		const sources = []
+
+		routesParams.forEach((subDomain) => {
+			const cities = getRegex(subDomain.cities)
+			const langs = getRegex(subDomain.langs)
+
+			sources.push(`/:city${cities}${routesBase[route]}`)
+			sources.push(`/:lang${langs}${routesBase[route]}`)
+			sources.push(`/:city${cities}/:lang${langs}${routesBase[route]}`)
+		})
+
+		definedRoutes[route] = sources
+	}
+
+	return definedRoutes
+}
+
+const routes = generateRoutes()
 
 const nextConfig = {
 	async rewrites() {
