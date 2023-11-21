@@ -10,11 +10,11 @@ function generateRoutes() {
 		const sources = []
 
 		routesParams.forEach((subDomain) => {
-			const cities = `(\\b(?!about|services|portfolio|contacts|${subDomain.langs.join("|")}\\b)\\w+)`
+			const cities = `(${subDomain.cities.join("|")})`
 			const langs = `(${subDomain.langs.join("|")})`
 
-			sources.push(`${routesBase[route]}/:city${cities}`)
 			sources.push(`/:lang${langs}${routesBase[route]}`)
+			sources.push(`${routesBase[route]}/:city${cities}`)
 			sources.push(`/:lang${langs}${routesBase[route]}/:city${cities}`)
 		})
 
