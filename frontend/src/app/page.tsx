@@ -9,11 +9,9 @@ interface HomeProps {
 }
 
 async function Home(props: HomeProps) {
-    const response = await api.get("/posts")
 
-    console.log(response.data);
+	console.log(props);
 	
-
 	return <div>Home</div>
 }
 

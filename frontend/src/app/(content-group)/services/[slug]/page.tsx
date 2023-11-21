@@ -2,10 +2,16 @@ interface ServiceProps {
     params: {
         slug: string
     }
+    searchParams: {
+        lang: string
+        city: string
+    }
 }
 
-function Service({params}: ServiceProps) {
-    return ( <div>Service - {params.slug}</div> );
+function Service(props: ServiceProps) {
+    console.log(props);
+    
+    return ( <div>Service - {props.params.slug}</div> );
 }
 
 export default Service;

@@ -14,12 +14,12 @@ function generateRoutes() {
 		const sources = []
 
 		routesParams.forEach((subDomain) => {
-			const cities = getRegex(subDomain.cities)
+			const cities = "(\\b(?!about|services|portfolio|contacts\\b)\\w+)"
 			const langs = getRegex(subDomain.langs)
 
-			sources.push(`/:city${cities}${routesBase[route]}`)
+			sources.push(`${routesBase[route]}/:city${cities}`)
 			sources.push(`/:lang${langs}${routesBase[route]}`)
-			sources.push(`/:city${cities}/:lang${langs}${routesBase[route]}`)
+			sources.push(`/:lang${langs}${routesBase[route]}/:city${cities}`)
 		})
 
 		definedRoutes[route] = sources
@@ -47,7 +47,7 @@ const nextConfig = {
 			}))],
 			[routes.service.map((source) => ({
 				source,
-				destination: "/services/:slug/",
+				destination: "/services/:slug?lang=:lang&city=:city",
 			}))],
 			[routes.portfolio.map((source) => ({
 				source,
@@ -55,7 +55,7 @@ const nextConfig = {
 			}))],
 			[routes.project.map((source) => ({
 				source,
-				destination: "/portfolio/:slug",
+				destination: "/portfolio/:slug?lang=:lang&city=:city",
 			}))],
 			[routes.contacts.map((source) => ({
 				source,
