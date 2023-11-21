@@ -3,10 +3,6 @@
 const routesBase = require("./settings/routes-base.json")
 const routesParams = require("./settings/routes-params.json")
 
-function getRegex(params) {
-	return `(${params.join("|")})`
-}
-
 function generateRoutes() {
 	const definedRoutes = {}
 
@@ -14,8 +10,8 @@ function generateRoutes() {
 		const sources = []
 
 		routesParams.forEach((subDomain) => {
-			const cities = "(\\b(?!about|services|portfolio|contacts\\b)\\w+)"
-			const langs = getRegex(subDomain.langs)
+			const cities = `(\\b(?!about|services|portfolio|contacts|${subDomain.langs.join("|")}\\b)\\w+)`
+			const langs = `(${subDomain.langs.join("|")})`
 
 			sources.push(`${routesBase[route]}/:city${cities}`)
 			sources.push(`/:lang${langs}${routesBase[route]}`)
@@ -63,6 +59,7 @@ const nextConfig = {
 			}))],
 		].flat(Infinity)
 	},
+	trailingSlash: true,
 }
 
 module.exports = nextConfig
