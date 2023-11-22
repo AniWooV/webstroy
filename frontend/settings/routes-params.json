@@ -1,7 +1,12 @@
 [
 	{
-		"subDomain": "",
-		"langs": ["en", "ru"],
+		"subdomain": "ekb",
+		"langs": ["ru", "en"],
 		"cities": ["perm", "irbit"]
+	},
+	{
+		"subdomain": "zab",
+		"langs": ["ru", "en"],
+		"cities": ["chita", "kr-kam"]
 	}
 ]

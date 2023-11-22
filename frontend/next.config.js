@@ -1,63 +1,61 @@
 /** @type {import('next').NextConfig} */
 
-const routesBase = require("./settings/routes-base.json")
 const routesParams = require("./settings/routes-params.json")
 
-function generateRoutes() {
-	const definedRoutes = {}
+function generateRewrites() {
+	const definedRoutes = []
 
-	for (let route in routesBase) {
-		const sources = []
+	routesParams.forEach((params) => {
+		const cities = `(${params.cities.join("|")})`
+		const langs = `(${params.langs.join("|")})`
 
-		routesParams.forEach((subDomain) => {
-			const cities = `(${subDomain.cities.join("|")})`
-			const langs = `(${subDomain.langs.join("|")})`
+		const folder = [
+			{
+				type: "host",
+				value: `(${params.subdomain}\..*)`,
+			},
+		]
 
-			sources.push(`/:lang${langs}${routesBase[route]}`)
-			sources.push(`${routesBase[route]}/:city${cities}`)
-			sources.push(`/:lang${langs}${routesBase[route]}/:city${cities}`)
+		definedRoutes.push({
+			source: `/:lang${langs}/:slugs(.*)`,
+			has: folder,
+			destination: `/:slugs?lang=:lang`,
 		})
-
-		definedRoutes[route] = sources
-	}
+		definedRoutes.push({
+			source: `/:slugs(.*)/:city${cities}`,
+			has: folder,
+			destination: `/:slugs?city=:city`,
+		})
+		definedRoutes.push({
+			source: `/:lang${langs}/:slugs(.*)/:city${cities}`,
+			has: folder,
+			destination: `/:slugs?lang=:lang&city=:city`,
+		})
+		definedRoutes.push({
+			source: `/:lang${langs}`,
+			has: folder,
+			destination: `/`,
+		})
+		definedRoutes.push({
+			source: `/:city${cities}`,
+			has: folder,
+			destination: `/`,
+		})
+		definedRoutes.push({
+			source: `/:lang${langs}/:city${cities}`,
+			has: folder,
+			destination: `/`,
+		})
+	})
 
 	return definedRoutes
 }
 
-const routes = generateRoutes()
+const routes = generateRewrites()
 
 const nextConfig = {
 	async rewrites() {
-		return [
-			[routes.home.map((source) => ({
-				source,
-				destination: "/",
-			}))],
-			[routes.about.map((source) => ({
-				source,
-				destination: "/about/",
-			}))],
-			[routes.services.map((source) => ({
-				source,
-				destination: "/services/",
-			}))],
-			[routes.service.map((source) => ({
-				source,
-				destination: "/services/:slug?lang=:lang&city=:city",
-			}))],
-			[routes.portfolio.map((source) => ({
-				source,
-				destination: "/portfolio/",
-			}))],
-			[routes.project.map((source) => ({
-				source,
-				destination: "/portfolio/:slug?lang=:lang&city=:city",
-			}))],
-			[routes.contacts.map((source) => ({
-				source,
-				destination: "/contacts/",
-			}))],
-		].flat(Infinity)
+		return routes
 	},
 	trailingSlash: true,
 }
