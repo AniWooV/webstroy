@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "inits",
+  "info": {
+    "singularName": "init",
+    "pluralName": "inits",
+    "displayName": "init"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

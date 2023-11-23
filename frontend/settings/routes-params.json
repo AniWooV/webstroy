@@ -1,12 +1,14 @@
-[
-	{
-		"subdomain": "ekb",
+{
+	"ekb": {
 		"langs": ["ru", "en"],
-		"cities": ["perm", "irbit"]
+		"cities": ["perm", "irbit"],
+		"default-locale": "en",
+		"default-city": "ekb"
 	},
-	{
-		"subdomain": "zab",
+	"zab": {
 		"langs": ["ru", "en"],
-		"cities": ["chita", "kr-kam"]
+		"cities": ["ulan-ude", "kr-kam"],
+		"default-locale": "ru",
+		"default-city": "chita"
 	}
-]
+}
