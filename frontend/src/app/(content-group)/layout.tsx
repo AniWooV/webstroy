@@ -1,3 +1,5 @@
+import Header from "@/components/header";
+import { ChildrenParams } from "@/interfaces/params";
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -9,11 +11,14 @@ interface LayoutProps {
 	children: React.ReactNode,
 }
 
-function Layout(props: LayoutProps) {
+function Layout({children}: LayoutProps) {
+	const params: ChildrenParams = JSON.parse(children?.props.childPropSegment.slice(9))
+
 	return (
 		<html>
 			<body>
-				<main>{props.children}</main>
+				<Header {...params} />
+				<main>{children}</main>
 			</body>
 		</html>
 	)

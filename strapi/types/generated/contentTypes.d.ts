@@ -863,6 +863,58 @@ export interface ApiServiceService extends Schema.CollectionType {
   };
 }
 
+export interface ApiTitleTitle extends Schema.CollectionType {
+  collectionName: 'titles';
+  info: {
+    singularName: 'title';
+    pluralName: 'titles';
+    displayName: 'Title';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slug: Attribute.UID<'api::title.title', 'title'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::title.title',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::title.title',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::title.title',
+      'oneToMany',
+      'api::title.title'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -884,6 +936,7 @@ declare module '@strapi/types' {
       'api::init.init': ApiInitInit;
       'api::region.region': ApiRegionRegion;
       'api::service.service': ApiServiceService;
+      'api::title.title': ApiTitleTitle;
     }
   }
 }

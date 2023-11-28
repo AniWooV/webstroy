@@ -6,12 +6,16 @@ import routesParams from "../settings/routes-params.json"
 type paramsKey = keyof typeof routesParams
 
 export function middleware(request: NextRequest) {
-    const subdomain = request.headers.get("x-forwarded-host")?.split(".")[0] || ""
+    let subdomain = request.headers.get("x-forwarded-host")?.split(".")[0] || ""
 
-    const defaultLocale = routesParams[subdomain as paramsKey]["default-locale"]
-    const defaultCity = routesParams[subdomain as paramsKey]["default-city"]
+    if (subdomain === "localhost:3000") {
+        subdomain = ""
+    }
+
+    const defaultLang = routesParams[subdomain as paramsKey]["default-lang"] ? `default-lang=${routesParams[subdomain as paramsKey]["default-lang"]}` : ""
+    const defaultCity = routesParams[subdomain as paramsKey]["default-city"] ? `default-city=${routesParams[subdomain as paramsKey]["default-city"]}` : ""
     
-    return NextResponse.rewrite(new URL(`${request.url}?default-locale=${defaultLocale}&default-city=${defaultCity}`))
+    return NextResponse.rewrite(new URL(`${request.url}?${defaultLang}&${defaultCity}`))
 }
 
 export const config = {

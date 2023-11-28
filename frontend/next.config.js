@@ -10,26 +10,32 @@ function generateRewrites() {
 		const rewrites = []
 
 		for (let subdomain in routesParams) {
-			const cities = `(${routesParams[subdomain].cities.join("|")})`
-			const langs = `(${routesParams[subdomain].langs.join("|")})`
+			const cities = routesParams[subdomain].cities.length ? `:city(${routesParams[subdomain].cities.join("|")})` : ""
+			const langs = routesParams[subdomain].langs.length ? `/:lang(${routesParams[subdomain].langs.join("|")})` : ""
+			const defaultCity = routesParams[subdomain]["default-city"] ? `&default-city=${routesParams[subdomain]["default-city"]}` : ""
+			const defaultLang = routesParams[subdomain]["default-lang"] ? `&default-lang=${routesParams[subdomain]["default-lang"]}` : ""
 
-			const has = [{ type: "host", value: `(${subdomain}\..*)` }]
+			const has = []
+
+			if (subdomain) {
+				has.push({ type: "host", value: `(${subdomain}\..*)` })
+			}
 
 			rewrites.push(
 				{
-					source: `/:lang${langs}${routesBase[route]}`,
+					source: `${langs}${routesBase[route]}`,
 					has,
-					destination: `${routesBase[route]}?lang=:lang&default-city=${routesParams[subdomain]["default-city"]}`,
+					destination: `${routesBase[route]}?lang=:lang${defaultLang}${defaultCity}`,
 				},
 				{
-					source: `${routesBase[route]}:city${cities}`,
+					source: `${routesBase[route]}${cities}`,
 					has,
-					destination: `${routesBase[route]}?city=:city&default-locale=${routesParams[subdomain]["default-locale"]}`,
+					destination: `${routesBase[route]}?city=:city${defaultLang}${defaultCity}`,
 				},
 				{
-					source: `/:lang${langs}${routesBase[route]}:city${cities}`,
+					source: `${langs}${routesBase[route]}${cities}`,
 					has,
-					destination: `${routesBase[route]}?lang=:lang&city=:city`,
+					destination: `${routesBase[route]}?lang=:lang&city=:city${defaultLang}${defaultCity}`,
 				}
 			)
 		}

@@ -1,14 +1,20 @@
 {
 	"ekb": {
-		"langs": ["ru", "en"],
+		"langs": ["ru"],
 		"cities": ["perm", "irbit"],
-		"default-locale": "en",
+		"default-lang": "en",
 		"default-city": "ekb"
 	},
 	"zab": {
-		"langs": ["ru", "en"],
+		"langs": ["en"],
 		"cities": ["ulan-ude", "kr-kam"],
-		"default-locale": "ru",
+		"default-lang": "ru",
 		"default-city": "chita"
+	},
+	"": {
+		"langs": [],
+		"cities": [],
+		"default-lang": "ru",
+		"default-city": ""
 	}
 }
