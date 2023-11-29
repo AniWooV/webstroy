@@ -682,20 +682,35 @@ export interface ApiCityCity extends Schema.CollectionType {
     singularName: 'city';
     pluralName: 'cities';
     displayName: 'City';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    name: Attribute.String;
-    nameCase: Attribute.String;
-    slug: Attribute.String;
-    path: Attribute.String;
+    name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    nameCase: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     region: Attribute.Relation<
       'api::city.city',
       'manyToOne',
       'api::region.region'
     >;
+    slug: Attribute.UID;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -703,6 +718,12 @@ export interface ApiCityCity extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::city.city', 'oneToOne', 'admin::user'> &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::city.city',
+      'oneToMany',
+      'api::city.city'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -712,18 +733,19 @@ export interface ApiCountryCountry extends Schema.CollectionType {
     singularName: 'country';
     pluralName: 'countries';
     displayName: 'Country';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    slug: Attribute.String;
     name: Attribute.String;
     regions: Attribute.Relation<
       'api::country.country',
       'oneToMany',
       'api::region.region'
     >;
+    slug: Attribute.UID<'api::country.country', 'name'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -761,6 +783,51 @@ export interface ApiInitInit extends Schema.SingleType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::init.init', 'oneToOne', 'admin::user'> &
       Attribute.Private;
+  };
+}
+
+export interface ApiMetaMeta extends Schema.CollectionType {
+  collectionName: 'metas';
+  info: {
+    singularName: 'meta';
+    pluralName: 'metas';
+    displayName: 'Meta';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slug: Attribute.UID<'api::meta.meta', 'title'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::meta.meta', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::meta.meta', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::meta.meta',
+      'oneToMany',
+      'api::meta.meta'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -934,6 +1001,7 @@ declare module '@strapi/types' {
       'api::city.city': ApiCityCity;
       'api::country.country': ApiCountryCountry;
       'api::init.init': ApiInitInit;
+      'api::meta.meta': ApiMetaMeta;
       'api::region.region': ApiRegionRegion;
       'api::service.service': ApiServiceService;
       'api::title.title': ApiTitleTitle;
