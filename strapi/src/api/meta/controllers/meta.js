@@ -19,29 +19,26 @@ module.exports = createCoreController("api::meta.meta", ({ strapi }) => ({
 
     const metas = await strapi
       .service("api::meta.meta")
-      .getLocalizedEntity("api::meta.meta", ctx, slug, queryParams.locale);
+      .getLocalizedEntity("api::meta.meta", ctx, slug, queryParams.lang);
 
     const cities = await strapi
     .service("api::meta.meta")
-    .getLocalizedEntity("api::city.city", ctx, queryParams.city, queryParams.locale);
+    .getLocalizedEntity("api::city.city", ctx, queryParams.city, queryParams.lang);
 
-    const sanitizedMetas = await this.sanitizeOutput(metas, ctx);
-    const sanitizedCities = await this.sanitizeOutput(cities, ctx)
+    let sanitizedMeta = await this.sanitizeOutput(metas, ctx);
+    let sanitizedCity = await this.sanitizeOutput(cities, ctx)
 
-    let definedMeta = sanitizedMetas[0];
-    let definedCity = sanitizedCities[0];
-
-    const keys = getKeysWithPlaceholder(definedMeta, "city");
+    const keys = getKeysWithPlaceholder(sanitizedMeta, "city");
 
     if (keys.length > 0) {
-      definedMeta = replacePlaceholderWithInput(
-        definedMeta,
+      sanitizedMeta = replacePlaceholderWithInput(
+        sanitizedMeta,
         keys,
         "{{city}}",
-        definedCity.name
+        sanitizedCity.name
       );
     }
 
-    return this.transformResponse(definedMeta);
+    return this.transformResponse(sanitizedMeta);
   },
 }));

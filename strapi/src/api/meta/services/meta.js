@@ -1,21 +1,21 @@
-'use strict';
+"use strict";
 
-const { getLocalizedData } = require('../../../settings/localization');
+const { getLocalizedData } = require("../../../settings/localization");
 
 /**
  * meta service
  */
 
-const { createCoreService } = require('@strapi/strapi').factories;
+const { createCoreService } = require("@strapi/strapi").factories;
 
-module.exports = createCoreService('api::meta.meta', ({strapi}) => ({
-    async getLocalizedEntity(uid, ctx, slug, locale) {
-        const entity = await strapi.entityService.findMany(uid, {
-            filters: { slug: slug },
-            populate: "localizations",
-            ...ctx.query
-        })
+module.exports = createCoreService("api::meta.meta", ({ strapi }) => ({
+  async getLocalizedEntity(uid, ctx, slug, lang) {
+    const entity = await strapi.entityService.findMany(uid, {
+      filters: { slug: slug },
+      populate: "localizations",
+      ...ctx.query,
+    }); 
 
-    return getLocalizedData(entity, locale)
-    }
+    return getLocalizedData(entity[0], lang);
+  },
 }));
