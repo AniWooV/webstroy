@@ -12,7 +12,17 @@ interface LayoutProps {
 }
 
 function Layout({children}: LayoutProps) {
-	const params: ChildrenParams = JSON.parse(children?.props.childPropSegment.slice(9))
+	console.log(children);
+
+	let params: ChildrenParams
+
+	if (children?.props.childPropSegment.startsWith("__PAGE__"))
+	{
+		params = JSON.parse(children?.props.childPropSegment.slice(9))
+	} else {
+		params = {}
+	}
+	
 
 	return (
 		<html>

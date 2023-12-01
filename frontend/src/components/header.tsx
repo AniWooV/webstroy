@@ -2,36 +2,37 @@
 
 import { ChildrenParams } from "@/interfaces/params"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 interface HeaderProps extends ChildrenParams {}
 
 function Header(props: HeaderProps) {
-	const navBase: string[] = []
+	const [navBase, setNavBase] = useState<string[]>([])
 
-	if (props.lang) {
-		localStorage.setItem("lang", props.lang)
-	} else {
-		localStorage.removeItem("lang")
-	}
-	if (props.city) {
-		localStorage.setItem("city", props.city)
-	} else {
-		localStorage.removeItem("city")
-	}
+	useEffect(() => {
+		if (props.lang) {
+			localStorage.setItem("lang", props.lang)
+		} else {
+			localStorage.removeItem("lang")
+		}
+		if (props.city) {
+			localStorage.setItem("city", props.city)
+		} else {
+			localStorage.removeItem("city")
+		}
 
-	if (localStorage.length > 0) {
-		navBase.push(
-			localStorage.getItem("lang")
-				? `/${localStorage.getItem("lang")}`
-				: ""
-		)
-		navBase.push("")
-		navBase.push(
-			localStorage.getItem("city")
-				? `${localStorage.getItem("city")}/`
-				: ""
-		)
-	}
+		if (localStorage.length > 0) {
+			setNavBase([
+				localStorage.getItem("lang")
+					? `/${localStorage.getItem("lang")}`
+					: "",
+				"",
+				localStorage.getItem("city")
+					? `${localStorage.getItem("city")}/`
+					: "",
+			])
+		}
+	}, [])
 
 	const navLinks = [
 		{
@@ -67,13 +68,13 @@ function Header(props: HeaderProps) {
 				{navLinks.map((link, index) => {
 					navBase[1] = link.baseHref
 
-					console.log(navBase.join(""));
-					
+					console.log(navBase.join(""))
+
 					if (link.static) {
 						return (
 							<Link
 								key={index}
-								href={navBase.slice(0,2).join("")}
+								href={navBase.slice(0, 2).join("")}
 								className="m-2"
 							>
 								{link.name}
