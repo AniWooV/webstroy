@@ -1,9 +1,8 @@
 "use strict";
 
-const { getLocalizedData } = require("../../../settings/localization");
 const {
-  getKeysWithPlaceholder,
-  replacePlaceholderWithInput,
+  getKeysWithPlaceholders,
+  replacePlaceholdersWithValues,
 } = require("../../../settings/placeholders");
 
 /**
@@ -28,14 +27,13 @@ module.exports = createCoreController("api::meta.meta", ({ strapi }) => ({
     let sanitizedMeta = await this.sanitizeOutput(metas, ctx);
     let sanitizedCity = await this.sanitizeOutput(cities, ctx)
 
-    const keys = getKeysWithPlaceholder(sanitizedMeta, "city");
+    const keys = getKeysWithPlaceholders(sanitizedMeta);
 
-    if (keys.length > 0) {
-      sanitizedMeta = replacePlaceholderWithInput(
+    if (Object.keys(keys).length > 0) {
+      sanitizedMeta = replacePlaceholdersWithValues(
         sanitizedMeta,
         keys,
-        "{{city}}",
-        sanitizedCity.name
+        {city: sanitizedCity.name}
       );
     }
 

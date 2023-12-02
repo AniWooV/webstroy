@@ -1,23 +1,35 @@
-function replacePlaceholderWithInput(entity, keys, placeholder, input) {
-  keys.forEach((key) => {
-    entity[key] = entity[key].split(placeholder).join(input);
-  });
+const placeholders = ["city"];
 
-  return entity;
-}
-
-function getKeysWithPlaceholder(entity, placeholder) {
-  const keys = [];
+function getKeysWithPlaceholders(entity) {
+  const keys = {};
 
   for (let key in entity) {
-    if (
-      new RegExp(`(.*\{\{${placeholder}\}\}.*)`).test(entity[key].toString())
-    ) {
-      keys.push(key);
+    const placehldrs = [];
+
+    placeholders.forEach((placeholder) => {
+      if (
+        new RegExp(`(.*\{\{${placeholder}\}\}.*)`).test(entity[key].toString())
+      ) {
+        placehldrs.push(placeholder);
+      }
+    });
+
+    if (placehldrs.length > 0) {
+      keys[key] = placehldrs;
     }
   }
 
   return keys;
 }
 
-module.exports = { replacePlaceholderWithInput, getKeysWithPlaceholder };
+function replacePlaceholdersWithValues(entity, keys, values) {
+  for (let key in keys) {
+    keys[key].forEach((placeholder) => {
+      entity[key] = entity[key].split(`{{${placeholder}}}`).join(values[placeholder]);
+    });
+  }
+
+  return entity;
+}
+
+module.exports = { replacePlaceholdersWithValues, getKeysWithPlaceholders };
