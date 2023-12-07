@@ -710,7 +710,14 @@ export interface ApiCityCity extends Schema.CollectionType {
       'manyToOne',
       'api::region.region'
     >;
-    slug: Attribute.UID;
+    slug: Attribute.UID<'api::city.city', 'name'>;
+    isMain: Attribute.Boolean &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -738,14 +745,41 @@ export interface ApiCountryCountry extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    name: Attribute.String;
+    name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slug: Attribute.UID<'api::country.country', 'name'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     regions: Attribute.Relation<
       'api::country.country',
       'oneToMany',
       'api::region.region'
     >;
-    slug: Attribute.UID<'api::country.country', 'name'>;
+    availiableLocalizations: Attribute.JSON &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    defaultLocalization: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -761,6 +795,12 @@ export interface ApiCountryCountry extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::country.country',
+      'oneToMany',
+      'api::country.country'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -837,21 +877,38 @@ export interface ApiRegionRegion extends Schema.CollectionType {
     singularName: 'region';
     pluralName: 'regions';
     displayName: 'Region';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    name: Attribute.String;
-    country: Attribute.Relation<
-      'api::region.region',
-      'manyToOne',
-      'api::country.country'
-    >;
+    name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     cities: Attribute.Relation<
       'api::region.region',
       'oneToMany',
       'api::city.city'
+    >;
+    slug: Attribute.UID<'api::region.region', 'name'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    country: Attribute.Relation<
+      'api::region.region',
+      'manyToOne',
+      'api::country.country'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -868,6 +925,12 @@ export interface ApiRegionRegion extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::region.region',
+      'oneToMany',
+      'api::region.region'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -930,58 +993,6 @@ export interface ApiServiceService extends Schema.CollectionType {
   };
 }
 
-export interface ApiTitleTitle extends Schema.CollectionType {
-  collectionName: 'titles';
-  info: {
-    singularName: 'title';
-    pluralName: 'titles';
-    displayName: 'Title';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    title: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    slug: Attribute.UID<'api::title.title', 'title'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::title.title',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::title.title',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::title.title',
-      'oneToMany',
-      'api::title.title'
-    >;
-    locale: Attribute.String;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1004,7 +1015,6 @@ declare module '@strapi/types' {
       'api::meta.meta': ApiMetaMeta;
       'api::region.region': ApiRegionRegion;
       'api::service.service': ApiServiceService;
-      'api::title.title': ApiTitleTitle;
     }
   }
 }

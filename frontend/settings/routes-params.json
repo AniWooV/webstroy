@@ -1,11 +1,11 @@
 {
-	"ekb": {
+	"ekaterinburg": {
 		"langs": ["ru"],
 		"cities": ["perm", "irbit"],
 		"default-lang": "en",
 		"default-city": "ekb"
 	},
-	"zab": {
+	"chita": {
 		"langs": ["en"],
 		"cities": ["ulan-ude", "kr-kam"],
 		"default-lang": "ru",

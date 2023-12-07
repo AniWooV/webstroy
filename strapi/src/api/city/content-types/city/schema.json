@@ -39,7 +39,17 @@
       "inversedBy": "cities"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name"
+    },
+    "isMain": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }
