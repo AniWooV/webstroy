@@ -4,8 +4,7 @@
   "info": {
     "singularName": "country",
     "pluralName": "countries",
-    "displayName": "Country",
-    "description": ""
+    "displayName": "Country"
   },
   "options": {
     "draftAndPublish": true
@@ -17,6 +16,30 @@
   },
   "attributes": {
     "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "nameCase": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "availiableLocalizations": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
+    },
+    "defaultLocalization": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -38,22 +61,6 @@
       "relation": "oneToMany",
       "target": "api::region.region",
       "mappedBy": "country"
-    },
-    "availiableLocalizations": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "json"
-    },
-    "defaultLocalization": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
     }
   }
 }

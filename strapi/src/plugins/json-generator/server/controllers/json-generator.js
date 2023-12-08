@@ -1,6 +1,9 @@
 'use strict';
 
-const {writeFile} = require("fs")
+const fs = require("fs")
+
+const regions = require("../../../../../../settings/regions.json")
+const cities = require("../../../../../../settings/cities.json")
 
 module.exports = ({ strapi }) => ({
   async generate(ctx) {
@@ -30,10 +33,38 @@ module.exports = ({ strapi }) => ({
           "default-city": mainCity
         }
       })
-    });
+    }); 
 
-    writeFile("../cringe.json", JSON.stringify(params), (error, data) => {})
+    fs.writeFile("../settings/cringe.json", JSON.stringify(params), (error, data) => {})
 
     return "cringe"
   },
+  async addRegions(ctx) {
+    regions.forEach(async (region) => {
+      const entity = await strapi.entityService.create('api::region.region', {
+        data: {
+          name: region.name,
+          nameCase: region.name_case,
+          country: region.country_id
+        },
+      });
+    });
+  },
+  async addCities(ctx) {
+    cities.forEach(async (city) => {
+      const entity = await strapi.entityService.create('api::city.city', {
+        data: {
+          name: city.name,
+          nameCase: city.name_case,
+          nameReal: city.name_real,
+          isMain: city.is_main,
+          region: city.region_id,
+          slug: city.slug,
+          url: city.url
+        },
+      });
+    });
+
+    return "bebra"
+  }
 });

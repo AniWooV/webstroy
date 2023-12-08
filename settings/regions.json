@@ -1,0 +1,938 @@
+[
+	{
+		"id": 1,
+		"name": "Хакасия",
+		"name_case": "",
+		"slug": "ru-kk",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 2,
+		"name": "Оренбургская область",
+		"name_case": "",
+		"slug": "ru-ore",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 3,
+		"name": "Краснодарский край",
+		"name_case": "",
+		"slug": "ru-kda",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 4,
+		"name": "Башкортостан",
+		"name_case": "",
+		"slug": "ru-ba",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 5,
+		"name": "Татарстан",
+		"name_case": "",
+		"slug": "ru-ta",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 6,
+		"name": "Адыгея",
+		"name_case": "",
+		"slug": "ru-ad",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 7,
+		"name": "Ростовская область",
+		"name_case": "",
+		"slug": "ru-ros",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 8,
+		"name": "Тыва",
+		"name_case": "",
+		"slug": "ru-ty",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 9,
+		"name": "Северная Осетия – Алания",
+		"name_case": "",
+		"slug": "ru-se",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 10,
+		"name": "Свердловская область",
+		"name_case": "",
+		"slug": "ru-sve",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 11,
+		"name": "Чувашия",
+		"name_case": "",
+		"slug": "ru-cu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 12,
+		"name": "Якутия",
+		"name_case": "",
+		"slug": "ru-sa",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 13,
+		"name": "Алтайский край",
+		"name_case": "",
+		"slug": "ru-alt",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 14,
+		"name": "Владимирская область",
+		"name_case": "",
+		"slug": "ru-vla",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 15,
+		"name": "Пермский край",
+		"name_case": "",
+		"slug": "ru-per",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 16,
+		"name": "Сахалинская область",
+		"name_case": "",
+		"slug": "ru-sak",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 17,
+		"name": "Белгородская область",
+		"name_case": "",
+		"slug": "ru-bel",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 18,
+		"name": "Тульская область",
+		"name_case": "",
+		"slug": "ru-tul",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 19,
+		"name": "Иркутская область",
+		"name_case": "",
+		"slug": "ru-irk",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 20,
+		"name": "Крым",
+		"name_case": "",
+		"slug": "ru-crm",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 21,
+		"name": "Хабаровский край",
+		"name_case": "",
+		"slug": "ru-kha",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 22,
+		"name": "Чукотский АО",
+		"name_case": "",
+		"slug": "ru-chu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 23,
+		"name": "Тверская область",
+		"name_case": "",
+		"slug": "ru-tve",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 24,
+		"name": "Кемеровская область",
+		"name_case": "",
+		"slug": "ru-kem",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 25,
+		"name": "Мурманская область",
+		"name_case": "",
+		"slug": "ru-mur",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 26,
+		"name": "Московская область",
+		"name_case": "",
+		"slug": "ru-mos",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 27,
+		"name": "Чечня",
+		"name_case": "",
+		"slug": "ru-ce",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 28,
+		"name": "Мордовия",
+		"name_case": "",
+		"slug": "ru-mo",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 29,
+		"name": "Нижегородская область",
+		"name_case": "",
+		"slug": "ru-niz",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 30,
+		"name": "Саратовская область",
+		"name_case": "",
+		"slug": "ru-sar",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 31,
+		"name": "Приморский край",
+		"name_case": "",
+		"slug": "ru-pri",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 32,
+		"name": "Красноярский край",
+		"name_case": "",
+		"slug": "ru-kya",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 33,
+		"name": "Архангельская область",
+		"name_case": "",
+		"slug": "ru-ark",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 34,
+		"name": "Томская область",
+		"name_case": "",
+		"slug": "ru-tom",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 35,
+		"name": "Астраханская область",
+		"name_case": "",
+		"slug": "ru-ast",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 36,
+		"name": "Челябинская область",
+		"name_case": "",
+		"slug": "ru-che",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 37,
+		"name": "Вологодская область",
+		"name_case": "",
+		"slug": "ru-vlg",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 38,
+		"name": "Бурятия",
+		"name_case": "",
+		"slug": "ru-bu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 39,
+		"name": "Калининградская область",
+		"name_case": "",
+		"slug": "ru-kgd",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 40,
+		"name": "Кабардино-Балкария",
+		"name_case": "",
+		"slug": "ru-kb",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 41,
+		"name": "Калужская область",
+		"name_case": "",
+		"slug": "ru-klu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 42,
+		"name": "Забайкальский край",
+		"name_case": "",
+		"slug": "ru-zab",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 43,
+		"name": "Новосибирская область",
+		"name_case": "",
+		"slug": "ru-nvs",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 44,
+		"name": "Ульяновская область",
+		"name_case": "",
+		"slug": "ru-uly",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 45,
+		"name": "Кировская область",
+		"name_case": "",
+		"slug": "ru-kir",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 46,
+		"name": "Пензенская область",
+		"name_case": "",
+		"slug": "ru-pnz",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 47,
+		"name": "Амурская область",
+		"name_case": "",
+		"slug": "ru-amu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 48,
+		"name": "Карелия",
+		"name_case": "",
+		"slug": "ru-kr",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 49,
+		"name": "Ханты-Мансийский АО — Югра",
+		"name_case": "",
+		"slug": "ru-khm",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 50,
+		"name": "Еврейская АО",
+		"name_case": "",
+		"slug": "ru-yev",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 51,
+		"name": "Ставропольский край",
+		"name_case": "",
+		"slug": "ru-sta",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 52,
+		"name": "Воронежская область",
+		"name_case": "",
+		"slug": "ru-vor",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 53,
+		"name": "Ленинградская область",
+		"name_case": "",
+		"slug": "ru-len",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 54,
+		"name": "Орловская область",
+		"name_case": "",
+		"slug": "ru-orl",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 55,
+		"name": "Новгородская область",
+		"name_case": "",
+		"slug": "ru-ngr",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 56,
+		"name": "Брянская область",
+		"name_case": "",
+		"slug": "ru-bry",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 57,
+		"name": "Костромская область",
+		"name_case": "",
+		"slug": "ru-kos",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 58,
+		"name": "Дагестан",
+		"name_case": "",
+		"slug": "ru-da",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 59,
+		"name": "Смоленская область",
+		"name_case": "",
+		"slug": "ru-smo",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 60,
+		"name": "Псковская область",
+		"name_case": "",
+		"slug": "ru-psk",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 61,
+		"name": "Камчатский край",
+		"name_case": "",
+		"slug": "ru-kam",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 62,
+		"name": "Ивановская область",
+		"name_case": "",
+		"slug": "ru-iva",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 63,
+		"name": "Волгоградская область",
+		"name_case": "",
+		"slug": "ru-vgg",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 64,
+		"name": "Марий Эл",
+		"name_case": "",
+		"slug": "ru-me",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 65,
+		"name": "Коми",
+		"name_case": "",
+		"slug": "ru-ko",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 66,
+		"name": "Удмуртия",
+		"name_case": "",
+		"slug": "ru-ud",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 67,
+		"name": "Ярославская область",
+		"name_case": "",
+		"slug": "ru-yar",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 68,
+		"name": "Алтай",
+		"name_case": "",
+		"slug": "ru-al",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 69,
+		"name": "Калмыкия",
+		"name_case": "",
+		"slug": "ru-kl",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 70,
+		"name": "Липецкая область",
+		"name_case": "",
+		"slug": "ru-lip",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 71,
+		"name": "Ямало-Ненецкий АО",
+		"name_case": "",
+		"slug": "ru-yan",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 72,
+		"name": "Курганская область",
+		"name_case": "",
+		"slug": "ru-kgn",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 73,
+		"name": "Курская область",
+		"name_case": "",
+		"slug": "ru-krs",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 74,
+		"name": "Тамбовская область",
+		"name_case": "",
+		"slug": "ru-tam",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 75,
+		"name": "Самарская область",
+		"name_case": "",
+		"slug": "ru-sam",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 76,
+		"name": "Тюменская область",
+		"name_case": "",
+		"slug": "ru-tyu",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 77,
+		"name": "Омская область",
+		"name_case": "",
+		"slug": "ru-oms",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 78,
+		"name": "Ингушетия",
+		"name_case": "",
+		"slug": "ru-in",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 79,
+		"name": "Карачаево-Черкесия",
+		"name_case": "",
+		"slug": "ru-kc",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 80,
+		"name": "Рязанская область",
+		"name_case": "",
+		"slug": "ru-rya",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 81,
+		"name": "Магаданская область",
+		"name_case": "",
+		"slug": "ru-mag",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 82,
+		"name": "Ненецкий АО",
+		"name_case": "",
+		"slug": "ru-nen",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 83,
+		"name": "Минская область",
+		"name_case": "",
+		"slug": "by-mi",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 84,
+		"name": "Витебская область",
+		"name_case": "",
+		"slug": "by-vi",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 85,
+		"name": "Могилёвская область",
+		"name_case": "",
+		"slug": "by-ma",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 86,
+		"name": "Гомельская область",
+		"name_case": "",
+		"slug": "by-ho",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 87,
+		"name": "Брестская область",
+		"name_case": "",
+		"slug": "by-br",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 88,
+		"name": "Гродненская область",
+		"name_case": "",
+		"slug": "by-hr",
+		"country_id": 2,
+		"url": ""
+	},
+	{
+		"id": 89,
+		"name": "Карагандинская область",
+		"name_case": "",
+		"slug": "kz-kar",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 90,
+		"name": "Акмолинская область",
+		"name_case": "",
+		"slug": "kz-akm",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 91,
+		"name": "Западно-Казахстанская область",
+		"name_case": "",
+		"slug": "kz-zap",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 92,
+		"name": "Павлодарская область",
+		"name_case": "",
+		"slug": "kz-pav",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 93,
+		"name": "Мангистауская область",
+		"name_case": "",
+		"slug": "kz-man",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 94,
+		"name": "Актюбинская область",
+		"name_case": "",
+		"slug": "kz-akt",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 95,
+		"name": "Кызылординская область",
+		"name_case": "",
+		"slug": "kz-kzy",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 96,
+		"name": "Костанайская область",
+		"name_case": "",
+		"slug": "kz-kus",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 97,
+		"name": "Туркестанская область",
+		"name_case": "",
+		"slug": "kz-yuz",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 98,
+		"name": "Атырауская область",
+		"name_case": "",
+		"slug": "kz-aty",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 99,
+		"name": "Восточно-Казахстанская область",
+		"name_case": "",
+		"slug": "kz-vos",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 100,
+		"name": "Северо-Казахстанская область",
+		"name_case": "",
+		"slug": "kz-sev",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 101,
+		"name": "Алматинская область",
+		"name_case": "",
+		"slug": "kz-alm",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 102,
+		"name": "Жамбыльская область",
+		"name_case": "",
+		"slug": "kz-zha",
+		"country_id": 3,
+		"url": ""
+	},
+	{
+		"id": 103,
+		"name": "Донецкая народная республика",
+		"name_case": "Донецкой народной республике",
+		"slug": "ru-dnr",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 104,
+		"name": "Луганская народная республика",
+		"name_case": "Луганской народной республике",
+		"slug": "ru-lnr",
+		"country_id": 1,
+		"url": ""
+	},
+	{
+		"id": 105,
+		"name": "Ташкентская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 106,
+		"name": "Наманганская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 107,
+		"name": "Самаркандская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 108,
+		"name": "Андижанская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 109,
+		"name": "Бухарская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 110,
+		"name": "Республика Каракалпакстан",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 111,
+		"name": "Кашкадарьинская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 112,
+		"name": "Ферганская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 113,
+		"name": "Джизакская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 114,
+		"name": "Хорезмская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 115,
+		"name": "Сурхандарьинская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 116,
+		"name": "Навоийская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	},
+	{
+		"id": 117,
+		"name": "Сырдарьинская область",
+		"name_case": "",
+		"slug": "",
+		"country_id": 4,
+		"url": ""
+	}
+]

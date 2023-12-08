@@ -18,9 +18,9 @@ function HomePage() {
     const test = axios.get("http://localhost:1337/json-generator/generate")
     console.log(test);
   }
-  // useEffect(() => {
-  //   axios.get("http://localhost:1337/json-generator/generate")
-  // }, [])
+  useEffect(() => {
+    axios.get("http://localhost:1337/json-generator/cities")
+  }, [])
 
   return (
     <Box background="neutral100">

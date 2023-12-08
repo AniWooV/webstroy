@@ -8,4 +8,22 @@ module.exports = [
       auth: false,
     },
   },
+  {
+    method: 'GET',
+    path: '/regions',
+    handler: 'generator.addRegions',
+    config: {
+      policies: [],
+      auth: false,
+    },
+  },
+  {
+    method: 'GET',
+    path: '/cities',
+    handler: 'generator.addCities',
+    config: {
+      policies: [],
+      auth: false,
+    },
+  },
 ];

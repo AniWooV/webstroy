@@ -682,7 +682,6 @@ export interface ApiCityCity extends Schema.CollectionType {
     singularName: 'city';
     pluralName: 'cities';
     displayName: 'City';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -705,12 +704,12 @@ export interface ApiCityCity extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    region: Attribute.Relation<
-      'api::city.city',
-      'manyToOne',
-      'api::region.region'
-    >;
-    slug: Attribute.UID<'api::city.city', 'name'>;
+    nameReal: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     isMain: Attribute.Boolean &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -718,6 +717,23 @@ export interface ApiCityCity extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
+    url: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    region: Attribute.Relation<
+      'api::city.city',
+      'manyToOne',
+      'api::region.region'
+    >;
+    slug: Attribute.UID &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -740,7 +756,6 @@ export interface ApiCountryCountry extends Schema.CollectionType {
     singularName: 'country';
     pluralName: 'countries';
     displayName: 'Country';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -757,6 +772,24 @@ export interface ApiCountryCountry extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    nameCase: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    availiableLocalizations: Attribute.JSON &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    defaultLocalization: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Attribute.UID<'api::country.country', 'name'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -768,18 +801,6 @@ export interface ApiCountryCountry extends Schema.CollectionType {
       'oneToMany',
       'api::region.region'
     >;
-    availiableLocalizations: Attribute.JSON &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    defaultLocalization: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -877,7 +898,6 @@ export interface ApiRegionRegion extends Schema.CollectionType {
     singularName: 'region';
     pluralName: 'regions';
     displayName: 'Region';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -894,12 +914,7 @@ export interface ApiRegionRegion extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    cities: Attribute.Relation<
-      'api::region.region',
-      'oneToMany',
-      'api::city.city'
-    >;
-    slug: Attribute.UID<'api::region.region', 'name'> &
+    nameCase: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -909,6 +924,11 @@ export interface ApiRegionRegion extends Schema.CollectionType {
       'api::region.region',
       'manyToOne',
       'api::country.country'
+    >;
+    cities: Attribute.Relation<
+      'api::region.region',
+      'oneToMany',
+      'api::city.city'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -929,65 +949,6 @@ export interface ApiRegionRegion extends Schema.CollectionType {
       'api::region.region',
       'oneToMany',
       'api::region.region'
-    >;
-    locale: Attribute.String;
-  };
-}
-
-export interface ApiServiceService extends Schema.CollectionType {
-  collectionName: 'services';
-  info: {
-    singularName: 'service';
-    pluralName: 'services';
-    displayName: 'Service';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    name: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    description: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    slug: Attribute.UID<'api::service.service', 'name'> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::service.service',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::service.service',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::service.service',
-      'oneToMany',
-      'api::service.service'
     >;
     locale: Attribute.String;
   };
@@ -1014,7 +975,6 @@ declare module '@strapi/types' {
       'api::init.init': ApiInitInit;
       'api::meta.meta': ApiMetaMeta;
       'api::region.region': ApiRegionRegion;
-      'api::service.service': ApiServiceService;
     }
   }
 }

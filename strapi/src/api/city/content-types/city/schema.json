@@ -4,8 +4,7 @@
   "info": {
     "singularName": "city",
     "pluralName": "cities",
-    "displayName": "City",
-    "description": ""
+    "displayName": "City"
   },
   "options": {
     "draftAndPublish": true
@@ -17,30 +16,28 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     },
     "nameCase": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     },
-    "region": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::region.region",
-      "inversedBy": "cities"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
+    "nameReal": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     },
     "isMain": {
       "pluginOptions": {
@@ -50,6 +47,28 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::region.region",
+      "inversedBy": "cities"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid"
     }
   }
 }
