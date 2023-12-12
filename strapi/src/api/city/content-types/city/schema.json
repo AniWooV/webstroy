@@ -46,7 +46,8 @@
         }
       },
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": false
     },
     "url": {
       "pluginOptions": {
@@ -68,7 +69,8 @@
           "localized": true
         }
       },
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

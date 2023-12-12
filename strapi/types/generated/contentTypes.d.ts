@@ -728,7 +728,7 @@ export interface ApiCityCity extends Schema.CollectionType {
       'manyToOne',
       'api::region.region'
     >;
-    slug: Attribute.UID &
+    slug: Attribute.UID<'api::city.city', 'name'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
