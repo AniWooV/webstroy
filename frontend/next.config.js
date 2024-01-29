@@ -10,9 +10,9 @@ function generateRewrites() {
 		const rewrites = []
 
 		for (let subdomain in routesParams) {
-			const cities = routesParams[subdomain].cities.length ? `:city(${routesParams[subdomain].cities.join("|")})` : ""
+			const cities = routesParams[subdomain].cities.length ? `:city(${routesParams[subdomain].cities.map((city) => city.url).join("|")})` : ""
 			const langs = routesParams[subdomain].langs.length ? `/:lang(${routesParams[subdomain].langs.join("|")})` : ""
-			const defaultCity = routesParams[subdomain]["default-city"] ? `&default-city=${routesParams[subdomain]["default-city"]}` : ""
+			const defaultCity = routesParams[subdomain]["default-city"] ? `&default-city=${routesParams[subdomain]["default-city"].url}` : ""
 			const defaultLang = routesParams[subdomain]["default-lang"] ? `&default-lang=${routesParams[subdomain]["default-lang"]}` : ""
 
 			const has = []

@@ -22,9 +22,9 @@ module.exports = ({ strapi }) => ({
 
         region.cities.forEach((city) => {
           if (city.isMain) {
-            mainCity = {url: city.url, clug: city.slug}
+            mainCity = {url: city.url, slug: city.slug}
           } else {
-            cityFolder.push({url: city.url, clug: city.slug});
+            cityFolder.push({url: city.url, slug: city.slug});
           }
         });
 
@@ -38,7 +38,7 @@ module.exports = ({ strapi }) => ({
     });
 
     fs.writeFile(
-      "../settings/cringe.json",
+      "../settings/routes-params.json",
       JSON.stringify(params),
       (error, data) => {}
     );
@@ -61,6 +61,10 @@ module.exports = ({ strapi }) => ({
         });
       }
 
+      await strapi.db.connection.raw(
+        "ALTER TABLE regions AUTO_INCREMENT = 1;"
+             );
+
       regions.forEach(async (region) => {
         const entity = await strapi.entityService.create("api::region.region", {
           data: {
@@ -76,6 +80,8 @@ module.exports = ({ strapi }) => ({
         message: "All entities were added",
       });
     } catch (error) {
+      console.log(error);
+
       return JSON.stringify({ isDone: false, message: error.message });
     }
   },
@@ -89,6 +95,10 @@ module.exports = ({ strapi }) => ({
           message: "Content-Type isn't empty, clean up all data first!",
         });
       }
+
+      await strapi.db.connection.raw(
+        "ALTER TABLE cities AUTO_INCREMENT = 1;"
+             );
 
       cities.forEach(async (city) => {
         const entity = await strapi.entityService.create("api::city.city", {
@@ -111,5 +121,11 @@ module.exports = ({ strapi }) => ({
     } catch (error) {
       return JSON.stringify({ isDone: false, message: error.message });
     }
+  },
+  async deleteRegionsAll(ctx) {
+    await strapi.db.query("api::region.region").deleteMany()
+  },
+  async deleteCitiesAll(ctx) {
+    await strapi.db.query("api::city.city").deleteMany()
   },
 });

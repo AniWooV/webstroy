@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_cards_client_cards",
+  "info": {
+    "displayName": "client",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.service"
+    }
+  }
+}

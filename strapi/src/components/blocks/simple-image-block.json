@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_simple_image_blocks",
+  "info": {
+    "displayName": "baseImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.image-card"
+    }
+  }
+}

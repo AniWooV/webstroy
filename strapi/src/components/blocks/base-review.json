@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_base_reviews",
+  "info": {
+    "displayName": "baseReview"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.review-card"
+    }
+  }
+}

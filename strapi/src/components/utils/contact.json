@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_utils_contacts",
+  "info": {
+    "displayName": "contact"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "social": {
+      "type": "enumeration",
+      "enum": [
+        "telegram",
+        "whatsup",
+        "behance",
+        "mail"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

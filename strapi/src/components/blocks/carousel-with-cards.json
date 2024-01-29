@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_carousel_with_cards",
+  "info": {
+    "displayName": "simpleImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.image-card"
+    }
+  }
+}

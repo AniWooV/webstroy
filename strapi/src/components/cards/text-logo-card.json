@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_cards_text_logo_cards",
+  "info": {
+    "displayName": "baseIcon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

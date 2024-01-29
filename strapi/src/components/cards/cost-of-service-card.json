@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_cards_cost_of_service_cards",
+  "info": {
+    "displayName": "costOfService",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.point"
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

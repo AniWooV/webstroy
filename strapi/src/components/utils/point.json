@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_utils_points",
+  "info": {
+    "displayName": "point"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

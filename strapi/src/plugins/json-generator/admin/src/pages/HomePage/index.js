@@ -4,7 +4,7 @@
  *
  */
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 // @ts-ignore
 import axios from "axios";
 import {
@@ -16,8 +16,15 @@ import {
   Typography,
   Stack,
   Alert,
+  Grid,
+  GridItem,
 } from "@strapi/design-system";
-import { BulletList, ArrowLeft, Stack as StackIcon } from "@strapi/icons";
+import {
+  BulletList,
+  ArrowLeft,
+  Stack as StackIcon,
+  Trash,
+} from "@strapi/icons";
 
 import "./index.css";
 
@@ -68,6 +75,20 @@ function HomePage() {
       .then((response) => checkForResponse(response));
   }
 
+  function deleteRegions(event) {
+    event.preventDefault();
+
+    axios.delete("http://localhost:1337/json-generator/regions")
+    .then((response) => checkForResponse(response));
+  }
+
+  function deleteCities(event) {
+    event.preventDefault();
+
+    axios.delete("http://localhost:1337/json-generator/cities")
+    .then((response) => checkForResponse(response));
+  }
+
   return (
     <>
       <Box background="neutral100" padding={8}>
@@ -100,9 +121,22 @@ function HomePage() {
                 </Typography>
               </Box>
               <Box>
-                <Button startIcon={<StackIcon />} onClick={addRegions}>
-                  Add regions
-                </Button>
+                <Grid gap={5}>
+                  <GridItem>
+                    <Button startIcon={<StackIcon />} onClick={addRegions}>
+                      Add
+                    </Button>
+                  </GridItem>
+                  <GridItem>
+                    <Button
+                      startIcon={<Trash />}
+                      variant="danger"
+                      onClick={deleteRegions}
+                    >
+                      Delete all
+                    </Button>
+                  </GridItem>
+                </Grid>
               </Box>
             </Stack>
           </Box>
@@ -117,9 +151,22 @@ function HomePage() {
                 </Typography>
               </Box>
               <Box>
-                <Button startIcon={<StackIcon />} onClick={addCities}>
-                  Add cities
-                </Button>
+                <Grid gap={5}>
+                  <GridItem>
+                    <Button startIcon={<StackIcon />} onClick={addCities}>
+                      Add
+                    </Button>
+                  </GridItem>
+                  <GridItem>
+                    <Button
+                      startIcon={<Trash />}
+                      variant="danger"
+                      onClick={deleteCities}
+                    >
+                      Delete all
+                    </Button>
+                  </GridItem>
+                </Grid>
               </Box>
             </Stack>
           </Box>

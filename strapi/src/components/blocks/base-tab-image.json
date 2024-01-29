@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_base_tab_images",
+  "info": {
+    "displayName": "baseTabImage"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.tab"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.image-card"
+    }
+  }
+}

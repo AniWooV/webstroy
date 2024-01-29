@@ -68,8 +68,6 @@ function Header(props: HeaderProps) {
 				{navLinks.map((link, index) => {
 					navBase[1] = link.baseHref
 
-					console.log(navBase.join(""))
-
 					if (link.static) {
 						return (
 							<Link

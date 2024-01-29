@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_cards_simple_cards",
+  "info": {
+    "displayName": "simple",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blocks_base_clients",
+  "info": {
+    "displayName": "baseClient"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

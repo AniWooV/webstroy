@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_simple_icon_cards",
+  "info": {
+    "displayName": "baseIcon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.icon-card"
+    }
+  }
+}

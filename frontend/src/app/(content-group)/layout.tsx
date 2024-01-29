@@ -12,22 +12,21 @@ interface LayoutProps {
 }
 
 function Layout({children}: LayoutProps) {
-	console.log(children);
-
 	let params: ChildrenParams
 
-	if (children?.props.childPropSegment.startsWith("__PAGE__"))
-	{
-		params = JSON.parse(children?.props.childPropSegment.slice(9))
-	} else {
-		params = {}
-	}
+	// if (children?.props.childPropSegment.startsWith("__PAGE__"))
+	// {
+	// 	params = JSON.parse(children?.props.childPropSegment.slice(9))
+	// } else {
+	// 	params = {}
+	// }
+
+	// <Header {...params} />
 	
 
 	return (
 		<html>
 			<body>
-				<Header {...params} />
 				<main>{children}</main>
 			</body>
 		</html>

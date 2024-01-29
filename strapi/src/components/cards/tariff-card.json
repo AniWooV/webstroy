@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_cards_tariff_cards",
+  "info": {
+    "displayName": "tariff",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "deadlines": {
+      "type": "string"
+    },
+    "mainPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.point"
+    },
+    "specialPointsTitle": {
+      "type": "string"
+    },
+    "specialPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "utils.point"
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

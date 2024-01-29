@@ -1,20 +1,2209 @@
 {
-	"ekaterinburg": {
-		"langs": ["ru"],
-		"cities": ["perm", "irbit"],
-		"default-lang": "en",
-		"default-city": "ekb"
-	},
-	"chita": {
-		"langs": ["en"],
-		"cities": ["ulan-ude", "kr-kam"],
-		"default-lang": "ru",
-		"default-city": "chita"
-	},
 	"": {
 		"langs": [],
 		"cities": [],
 		"default-lang": "ru",
-		"default-city": ""
+		"default-city": {"url": "", "slug": ""}
+	},
+	"kizil": {
+		"langs": [],
+		"cities": [
+			{ "url": "ak-dovurak", "slug": "ru-ty-ak-dovurak" },
+			{ "url": "turan", "slug": "ru-ty-turan" },
+			{ "url": "chadan", "slug": "ru-ty-chadan" },
+			{ "url": "shagonar", "slug": "ru-ty-shagonar" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kizil", "slug": "kizil" }
+	},
+	"ekaterinburg": {
+		"langs": [],
+		"cities": [
+			{ "url": "alapaevsk", "slug": "ru-sve-alapaevsk" },
+			{ "url": "aramil", "slug": "ru-sve-aramil" },
+			{ "url": "asbest", "slug": "ru-sve-asbest" },
+			{ "url": "artyomovskiy", "slug": "ru-sve-artyomovskiy" },
+			{ "url": "beryozovskiy-sve", "slug": "ru-sve-beryozovskiy" },
+			{ "url": "bogdanovich", "slug": "ru-sve-bogdanovich" },
+			{ "url": "verhnyaya-tura", "slug": "ru-sve-verhnyaya-tura" },
+			{ "url": "verhniy-tagil", "slug": "ru-sve-verhniy-tagil" },
+			{ "url": "verhnyaya-pishma", "slug": "ru-sve-verhnyaya-pishma" },
+			{ "url": "verhnyaya-salda", "slug": "ru-sve-verhnyaya-salda" },
+			{ "url": "verhoture", "slug": "ru-sve-verhoture" },
+			{ "url": "volchansk", "slug": "ru-sve-volchansk" },
+			{ "url": "degtyarsk", "slug": "ru-sve-degtyarsk" },
+			{ "url": "zarechniy-sve", "slug": "ru-sve-zarechniy" },
+			{ "url": "irbit", "slug": "ru-sve-irbit" },
+			{ "url": "ivdel", "slug": "ru-sve-ivdel" },
+			{ "url": "kamensk-uralskiy", "slug": "ru-sve-kamensk-uralskiy" },
+			{ "url": "kamishlov", "slug": "ru-sve-kamishlov" },
+			{ "url": "karpinsk", "slug": "ru-sve-karpinsk" },
+			{ "url": "kachkanar", "slug": "ru-sve-kachkanar" },
+			{ "url": "kirovgrad", "slug": "ru-sve-kirovgrad" },
+			{ "url": "krasnoturinsk", "slug": "ru-sve-krasnoturinsk" },
+			{ "url": "krasnoufimsk", "slug": "ru-sve-krasnoufimsk" },
+			{ "url": "krasnouralsk", "slug": "ru-sve-krasnouralsk" },
+			{ "url": "kushva", "slug": "ru-sve-kushva" },
+			{ "url": "lesnoy", "slug": "ru-sve-lesnoy" },
+			{ "url": "mihaylovsk-sve", "slug": "ru-sve-mihaylovsk" },
+			{ "url": "nevyansk", "slug": "ru-sve-nevyansk" },
+			{ "url": "nizhnie-sergi", "slug": "ru-sve-nizhnie-sergi" },
+			{ "url": "nizhniy-tagil", "slug": "ru-sve-nizhniy-tagil" },
+			{ "url": "nizhnyaya-tura", "slug": "ru-sve-nizhnyaya-tura" },
+			{ "url": "nizhnyaya-salda", "slug": "ru-sve-nizhnyaya-salda" },
+			{ "url": "novaya-lyalya", "slug": "ru-sve-novaya-lyalya" },
+			{ "url": "novouralsk", "slug": "ru-sve-novouralsk" },
+			{ "url": "pervouralsk", "slug": "ru-sve-pervouralsk" },
+			{ "url": "polevskoy", "slug": "ru-sve-polevskoy" },
+			{ "url": "revda", "slug": "ru-sve-revda" },
+			{ "url": "rezh", "slug": "ru-sve-rezh" },
+			{ "url": "severouralsk", "slug": "ru-sve-severouralsk" },
+			{ "url": "serov", "slug": "ru-sve-serov" },
+			{ "url": "sredneuralsk", "slug": "ru-sve-sredneuralsk" },
+			{ "url": "suhoy-log", "slug": "ru-sve-suhoy-log" },
+			{ "url": "sisert", "slug": "ru-sve-sisert" },
+			{ "url": "tavda", "slug": "ru-sve-tavda" },
+			{ "url": "talica", "slug": "ru-sve-talica" },
+			{ "url": "turinsk", "slug": "ru-sve-turinsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ekaterinburg", "slug": "ekaterinburg" }
+	},
+	"vladikavkaz": {
+		"langs": [],
+		"cities": [
+			{ "url": "alagir", "slug": "ru-se-alagir" },
+			{ "url": "ardon", "slug": "ru-se-ardon" },
+			{ "url": "beslan", "slug": "ru-se-beslan" },
+			{ "url": "digora", "slug": "ru-se-digora" },
+			{ "url": "mozdok", "slug": "ru-se-mozdok" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "vladikavkaz", "slug": "vladikavkaz" }
+	},
+	"abakan": {
+		"langs": [],
+		"cities": [
+			{ "url": "abaza", "slug": "ru-kk-abaza" },
+			{ "url": "sayanogorsk", "slug": "ru-kk-sayanogorsk" },
+			{ "url": "sorsk", "slug": "ru-kk-sorsk" },
+			{ "url": "chernogorsk", "slug": "ru-kk-chernogorsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "abakan", "slug": "abakan" }
+	},
+	"ufa": {
+		"langs": [],
+		"cities": [
+			{ "url": "agidel", "slug": "ru-ba-agidel" },
+			{ "url": "baymak", "slug": "ru-ba-baymak" },
+			{ "url": "belebey", "slug": "ru-ba-belebey" },
+			{ "url": "beloreck", "slug": "ru-ba-beloreck" },
+			{ "url": "birsk", "slug": "ru-ba-birsk" },
+			{ "url": "blagoveshhensk-ba", "slug": "ru-ba-blagoveshhensk" },
+			{ "url": "davlekanovo", "slug": "ru-ba-davlekanovo" },
+			{ "url": "dyurtyuli", "slug": "ru-ba-dyurtyuli" },
+			{ "url": "ishimbay", "slug": "ru-ba-ishimbay" },
+			{ "url": "kumertau", "slug": "ru-ba-kumertau" },
+			{ "url": "meleuz", "slug": "ru-ba-meleuz" },
+			{ "url": "mezhgore", "slug": "ru-ba-mezhgore" },
+			{ "url": "neftekamsk", "slug": "ru-ba-neftekamsk" },
+			{ "url": "oktyabrskiy", "slug": "ru-ba-oktyabrskiy" },
+			{ "url": "salavat", "slug": "ru-ba-salavat" },
+			{ "url": "sibay", "slug": "ru-ba-sibay" },
+			{ "url": "sterlitamak", "slug": "ru-ba-sterlitamak" },
+			{ "url": "tuymazi", "slug": "ru-ba-tuymazi" },
+			{ "url": "uchali", "slug": "ru-ba-uchali" },
+			{ "url": "yanaul", "slug": "ru-ba-yanaul" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ufa", "slug": "ufa" }
+	},
+	"orenburg": {
+		"langs": [],
+		"cities": [
+			{ "url": "abdulino", "slug": "ru-ore-abdulino" },
+			{ "url": "buguruslan", "slug": "ru-ore-buguruslan" },
+			{ "url": "buzuluk", "slug": "ru-ore-buzuluk" },
+			{ "url": "gay", "slug": "ru-ore-gay" },
+			{ "url": "kuvandik", "slug": "ru-ore-kuvandik" },
+			{ "url": "mednogorsk", "slug": "ru-ore-mednogorsk" },
+			{ "url": "novotroick", "slug": "ru-ore-novotroick" },
+			{ "url": "orsk", "slug": "ru-ore-orsk" },
+			{ "url": "sol-ileck", "slug": "ru-ore-sol-ileck" },
+			{ "url": "sorochinsk", "slug": "ru-ore-sorochinsk" },
+			{ "url": "yasniy", "slug": "ru-ore-yasniy" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "orenburg", "slug": "orenburg" }
+	},
+	"krasnodar": {
+		"langs": [],
+		"cities": [
+			{ "url": "abinsk", "slug": "ru-kda-abinsk" },
+			{ "url": "anapa", "slug": "ru-kda-anapa" },
+			{ "url": "apsheronsk", "slug": "ru-kda-apsheronsk" },
+			{ "url": "armavir", "slug": "ru-kda-armavir" },
+			{ "url": "belorechensk", "slug": "ru-kda-belorechensk" },
+			{ "url": "gelendzhik", "slug": "ru-kda-gelendzhik" },
+			{ "url": "goryachiy-klyuch", "slug": "ru-kda-goryachiy-klyuch" },
+			{ "url": "gulkevichi", "slug": "ru-kda-gulkevichi" },
+			{ "url": "eysk", "slug": "ru-kda-eysk" },
+			{ "url": "korenovsk", "slug": "ru-kda-korenovsk" },
+			{ "url": "kropotkin", "slug": "ru-kda-kropotkin" },
+			{ "url": "krimsk", "slug": "ru-kda-krimsk" },
+			{ "url": "kurganinsk", "slug": "ru-kda-kurganinsk" },
+			{ "url": "labinsk", "slug": "ru-kda-labinsk" },
+			{ "url": "novokubansk", "slug": "ru-kda-novokubansk" },
+			{ "url": "novorossiysk", "slug": "ru-kda-novorossiysk" },
+			{ "url": "primorsko-ahtarsk", "slug": "ru-kda-primorsko-ahtarsk" },
+			{
+				"url": "slavyansk-na-kubani",
+				"slug": "ru-kda-slavyansk-na-kubani"
+			},
+			{ "url": "sochi", "slug": "ru-kda-sochi" },
+			{ "url": "temryuk", "slug": "ru-kda-temryuk" },
+			{ "url": "timashyovsk", "slug": "ru-kda-timashyovsk" },
+			{ "url": "tihoreck", "slug": "ru-kda-tihoreck" },
+			{ "url": "tuapse", "slug": "ru-kda-tuapse" },
+			{ "url": "ust-labinsk", "slug": "ru-kda-ust-labinsk" },
+			{ "url": "hadizhensk", "slug": "ru-kda-hadizhensk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "krasnodar", "slug": "krasnodar" }
+	},
+	"maykop": {
+		"langs": [],
+		"cities": [{ "url": "adigeysk", "slug": "ru-ad-adigeysk" }],
+		"default-lang": "ru",
+		"default-city": { "url": "maykop", "slug": "maykop" }
+	},
+	"cheboksari": {
+		"langs": [],
+		"cities": [
+			{ "url": "alatir", "slug": "ru-cu-alatir" },
+			{ "url": "kanash", "slug": "ru-cu-kanash" },
+			{ "url": "kozlovka", "slug": "ru-cu-kozlovka" },
+			{ "url": "mariinskiy-posad", "slug": "ru-cu-mariinskiy-posad" },
+			{ "url": "novocheboksarsk", "slug": "ru-cu-novocheboksarsk" },
+			{ "url": "civilsk", "slug": "ru-cu-civilsk" },
+			{ "url": "shumerlya", "slug": "ru-cu-shumerlya" },
+			{ "url": "yadrin", "slug": "ru-cu-yadrin" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "cheboksari", "slug": "cheboksary" }
+	},
+	"kazan": {
+		"langs": [],
+		"cities": [
+			{ "url": "aznakaevo", "slug": "ru-ta-aznakaevo" },
+			{ "url": "agriz", "slug": "ru-ta-agriz" },
+			{ "url": "almetevsk", "slug": "ru-ta-almetevsk" },
+			{ "url": "arsk", "slug": "ru-ta-arsk" },
+			{ "url": "bavli", "slug": "ru-ta-bavli" },
+			{ "url": "bolgar", "slug": "ru-ta-bolgar" },
+			{ "url": "bugulma", "slug": "ru-ta-bugulma" },
+			{ "url": "buinsk", "slug": "ru-ta-buinsk" },
+			{ "url": "elabuga", "slug": "ru-ta-elabuga" },
+			{ "url": "zainsk", "slug": "ru-ta-zainsk" },
+			{ "url": "zelenodolsk", "slug": "ru-ta-zelenodolsk" },
+			{ "url": "innopolis", "slug": "ru-ta-innopolis" },
+			{ "url": "kukmor", "slug": "ru-ta-kukmor" },
+			{ "url": "laishevo", "slug": "ru-ta-laishevo" },
+			{ "url": "leninogorsk", "slug": "ru-ta-leninogorsk" },
+			{ "url": "mamadish", "slug": "ru-ta-mamadish" },
+			{ "url": "mendeleevsk", "slug": "ru-ta-mendeleevsk" },
+			{ "url": "menzelinsk", "slug": "ru-ta-menzelinsk" },
+			{ "url": "naberezhnie-chelni", "slug": "ru-ta-naberezhnie-chelni" },
+			{ "url": "nizhnekamsk", "slug": "ru-ta-nizhnekamsk" },
+			{ "url": "nurlat", "slug": "ru-ta-nurlat" },
+			{ "url": "tetyushi", "slug": "ru-ta-tetyushi" },
+			{ "url": "chistopol", "slug": "ru-ta-chistopol" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kazan", "slug": "kazan" }
+	},
+	"rostov-na-donu": {
+		"langs": [],
+		"cities": [
+			{ "url": "aksay-ros", "slug": "ru-ros-aksay" },
+			{ "url": "azov", "slug": "ru-ros-azov" },
+			{ "url": "bataysk", "slug": "ru-ros-bataysk" },
+			{ "url": "belaya-kalitva", "slug": "ru-ros-belaya-kalitva" },
+			{ "url": "volgodonsk", "slug": "ru-ros-volgodonsk" },
+			{ "url": "gukovo", "slug": "ru-ros-gukovo" },
+			{ "url": "doneck", "slug": "ru-ros-doneck" },
+			{ "url": "zverevo", "slug": "ru-ros-zverevo" },
+			{ "url": "zernograd", "slug": "ru-ros-zernograd" },
+			{
+				"url": "kamensk-shahtinskiy",
+				"slug": "ru-ros-kamensk-shahtinskiy"
+			},
+			{ "url": "konstantinovsk", "slug": "ru-ros-konstantinovsk" },
+			{ "url": "krasniy-sulin", "slug": "ru-ros-krasniy-sulin" },
+			{ "url": "millerovo", "slug": "ru-ros-millerovo" },
+			{ "url": "morozovsk", "slug": "ru-ros-morozovsk" },
+			{ "url": "novocherkassk", "slug": "ru-ros-novocherkassk" },
+			{ "url": "novoshahtinsk", "slug": "ru-ros-novoshahtinsk" },
+			{ "url": "proletarsk", "slug": "ru-ros-proletarsk" },
+			{ "url": "salsk", "slug": "ru-ros-salsk" },
+			{ "url": "semikarakorsk", "slug": "ru-ros-semikarakorsk" },
+			{ "url": "taganrog", "slug": "ru-ros-taganrog" },
+			{ "url": "cimlyansk", "slug": "ru-ros-cimlyansk" },
+			{ "url": "shahti", "slug": "ru-ros-shahti" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "rostov-na-donu", "slug": "rostov-na-donu" }
+	},
+	"yakutsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "aldan", "slug": "ru-sa-aldan" },
+			{ "url": "verhoyansk", "slug": "ru-sa-verhoyansk" },
+			{ "url": "vilyuysk", "slug": "ru-sa-vilyuysk" },
+			{ "url": "lensk", "slug": "ru-sa-lensk" },
+			{ "url": "mirniy-sa", "slug": "ru-sa-mirniy" },
+			{ "url": "neryungri", "slug": "ru-sa-neryungri" },
+			{ "url": "nyurba", "slug": "ru-sa-nyurba" },
+			{ "url": "olyokminsk", "slug": "ru-sa-olyokminsk" },
+			{ "url": "pokrovsk", "slug": "ru-sa-pokrovsk" },
+			{ "url": "srednekolimsk", "slug": "ru-sa-srednekolimsk" },
+			{ "url": "tommot", "slug": "ru-sa-tommot" },
+			{ "url": "udachniy", "slug": "ru-sa-udachniy" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "yakutsk", "slug": "yakutsk" }
+	},
+	"perm": {
+		"langs": [],
+		"cities": [
+			{ "url": "aleksandrovsk", "slug": "ru-per-aleksandrovsk" },
+			{ "url": "berezniki", "slug": "ru-per-berezniki" },
+			{ "url": "vereshhagino", "slug": "ru-per-vereshhagino" },
+			{ "url": "gornozavodsk", "slug": "ru-per-gornozavodsk" },
+			{ "url": "gremyachinsk", "slug": "ru-per-gremyachinsk" },
+			{ "url": "gubaha", "slug": "ru-per-gubaha" },
+			{ "url": "dobryanka", "slug": "ru-per-dobryanka" },
+			{ "url": "kizel", "slug": "ru-per-kizel" },
+			{ "url": "krasnovishersk", "slug": "ru-per-krasnovishersk" },
+			{ "url": "krasnokamsk", "slug": "ru-per-krasnokamsk" },
+			{ "url": "kudimkar", "slug": "ru-per-kudimkar" },
+			{ "url": "kungur", "slug": "ru-per-kungur" },
+			{ "url": "lisva", "slug": "ru-per-lisva" },
+			{ "url": "nitva", "slug": "ru-per-nitva" },
+			{ "url": "osa", "slug": "ru-per-osa" },
+			{ "url": "ochyor", "slug": "ru-per-ochyor" },
+			{ "url": "ohansk", "slug": "ru-per-ohansk" },
+			{ "url": "solikamsk", "slug": "ru-per-solikamsk" },
+			{ "url": "usole", "slug": "ru-per-usole" },
+			{ "url": "chaykovskiy", "slug": "ru-per-chaykovskiy" },
+			{ "url": "cherdin", "slug": "ru-per-cherdin" },
+			{ "url": "chernushka", "slug": "ru-per-chernushka" },
+			{ "url": "chyormoz", "slug": "ru-per-chyormoz" },
+			{ "url": "chusovoy", "slug": "ru-per-chusovoy" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "perm", "slug": "perm" }
+	},
+	"vladimir": {
+		"langs": [],
+		"cities": [
+			{ "url": "aleksandrov", "slug": "ru-vla-aleksandrov" },
+			{ "url": "vyazniki", "slug": "ru-vla-vyazniki" },
+			{ "url": "gorohovec", "slug": "ru-vla-gorohovec" },
+			{ "url": "gus-hrustalniy", "slug": "ru-vla-gus-hrustalniy" },
+			{ "url": "kameshkovo", "slug": "ru-vla-kameshkovo" },
+			{ "url": "karabanovo", "slug": "ru-vla-karabanovo" },
+			{ "url": "kirzhach", "slug": "ru-vla-kirzhach" },
+			{ "url": "kovrov", "slug": "ru-vla-kovrov" },
+			{ "url": "kolchugino", "slug": "ru-vla-kolchugino" },
+			{ "url": "kosteryovo", "slug": "ru-vla-kosteryovo" },
+			{ "url": "kurlovo", "slug": "ru-vla-kurlovo" },
+			{ "url": "lakinsk", "slug": "ru-vla-lakinsk" },
+			{ "url": "melenki", "slug": "ru-vla-melenki" },
+			{ "url": "murom", "slug": "ru-vla-murom" },
+			{ "url": "petushki", "slug": "ru-vla-petushki" },
+			{ "url": "pokrov", "slug": "ru-vla-pokrov" },
+			{ "url": "raduzhniy-vla", "slug": "ru-vla-raduzhniy" },
+			{ "url": "sobinka", "slug": "ru-vla-sobinka" },
+			{ "url": "strunino", "slug": "ru-vla-strunino" },
+			{ "url": "sudogda", "slug": "ru-vla-sudogda" },
+			{ "url": "suzdal", "slug": "ru-vla-suzdal" },
+			{ "url": "yurev-polskiy", "slug": "ru-vla-yurev-polskiy" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "vladimir", "slug": "vladimir" }
+	},
+	"belgorod": {
+		"langs": [],
+		"cities": [
+			{ "url": "alekseevka", "slug": "ru-bel-alekseevka" },
+			{ "url": "biryuch", "slug": "ru-bel-biryuch" },
+			{ "url": "valuyki", "slug": "ru-bel-valuyki" },
+			{ "url": "grayvoron", "slug": "ru-bel-grayvoron" },
+			{ "url": "gubkin", "slug": "ru-bel-gubkin" },
+			{ "url": "korocha", "slug": "ru-bel-korocha" },
+			{ "url": "noviy-oskol", "slug": "ru-bel-noviy-oskol" },
+			{ "url": "stariy-oskol", "slug": "ru-bel-stariy-oskol" },
+			{ "url": "stroitel", "slug": "ru-bel-stroitel" },
+			{ "url": "shebekino", "slug": "ru-bel-shebekino" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "belgorod", "slug": "belgorod" }
+	},
+	"barnaul": {
+		"langs": [],
+		"cities": [
+			{ "url": "aleysk", "slug": "ru-alt-aleysk" },
+			{ "url": "belokuriha", "slug": "ru-alt-belokuriha" },
+			{ "url": "biysk", "slug": "ru-alt-biysk" },
+			{ "url": "gornyak", "slug": "ru-alt-gornyak" },
+			{ "url": "zarinsk", "slug": "ru-alt-zarinsk" },
+			{ "url": "zmeinogorsk", "slug": "ru-alt-zmeinogorsk" },
+			{ "url": "kamen-na-obi", "slug": "ru-alt-kamen-na-obi" },
+			{ "url": "novoaltaysk", "slug": "ru-alt-novoaltaysk" },
+			{ "url": "rubcovsk", "slug": "ru-alt-rubcovsk" },
+			{ "url": "slavgorod-alt", "slug": "ru-alt-slavgorod" },
+			{ "url": "yarovoe", "slug": "ru-alt-yarovoe" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "barnaul", "slug": "barnaul" }
+	},
+	"irkutsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "alzamay", "slug": "ru-irk-alzamay" },
+			{ "url": "angarsk", "slug": "ru-irk-angarsk" },
+			{ "url": "baykalsk", "slug": "ru-irk-baykalsk" },
+			{ "url": "biryusinsk", "slug": "ru-irk-biryusinsk" },
+			{ "url": "bodaybo", "slug": "ru-irk-bodaybo" },
+			{ "url": "bratsk", "slug": "ru-irk-bratsk" },
+			{ "url": "vihorevka", "slug": "ru-irk-vihorevka" },
+			{
+				"url": "zheleznogorsk-ilimskiy",
+				"slug": "ru-irk-zheleznogorsk-ilimskiy"
+			},
+			{ "url": "zima", "slug": "ru-irk-zima" },
+			{ "url": "kirensk", "slug": "ru-irk-kirensk" },
+			{ "url": "nizhneudinsk", "slug": "ru-irk-nizhneudinsk" },
+			{ "url": "sayansk", "slug": "ru-irk-sayansk" },
+			{ "url": "svirsk", "slug": "ru-irk-svirsk" },
+			{ "url": "slyudyanka", "slug": "ru-irk-slyudyanka" },
+			{ "url": "tayshet", "slug": "ru-irk-tayshet" },
+			{ "url": "tulun", "slug": "ru-irk-tulun" },
+			{ "url": "usole-sibirskoe", "slug": "ru-irk-usole-sibirskoe" },
+			{ "url": "ust-ilimsk", "slug": "ru-irk-ust-ilimsk" },
+			{ "url": "ust-kut", "slug": "ru-irk-ust-kut" },
+			{ "url": "cheremhovo", "slug": "ru-irk-cheremhovo" },
+			{ "url": "shelehov", "slug": "ru-irk-shelehov" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "irkutsk", "slug": "irkutsk" }
+	},
+	"yuzhno-sahalinsk": {
+		"langs": [],
+		"cities": [
+			{
+				"url": "aleksandrovsk-sahalinskiy",
+				"slug": "ru-sak-aleksandrovsk-sahalinskiy"
+			},
+			{ "url": "aniva", "slug": "ru-sak-aniva" },
+			{ "url": "dolinsk", "slug": "ru-sak-dolinsk" },
+			{ "url": "korsakov", "slug": "ru-sak-korsakov" },
+			{ "url": "kurilsk", "slug": "ru-sak-kurilsk" },
+			{ "url": "makarov", "slug": "ru-sak-makarov" },
+			{ "url": "nevelsk", "slug": "ru-sak-nevelsk" },
+			{ "url": "oha", "slug": "ru-sak-oha" },
+			{ "url": "poronaysk", "slug": "ru-sak-poronaysk" },
+			{ "url": "severo-kurilsk", "slug": "ru-sak-severo-kurilsk" },
+			{ "url": "tomari", "slug": "ru-sak-tomari" },
+			{ "url": "uglegorsk", "slug": "ru-sak-uglegorsk" },
+			{ "url": "holmsk", "slug": "ru-sak-holmsk" }
+		],
+		"default-lang": "ru",
+		"default-city": {
+			"url": "yuzhno-sahalinsk",
+			"slug": "yuzhno-sahalinsk"
+		}
+	},
+	"tula": {
+		"langs": [],
+		"cities": [
+			{ "url": "aleksin", "slug": "ru-tul-aleksin" },
+			{ "url": "belyov", "slug": "ru-tul-belyov" },
+			{ "url": "bogorodick", "slug": "ru-tul-bogorodick" },
+			{ "url": "bolohovo", "slug": "ru-tul-bolohovo" },
+			{ "url": "venyov", "slug": "ru-tul-venyov" },
+			{ "url": "donskoy", "slug": "ru-tul-donskoy" },
+			{ "url": "efremov", "slug": "ru-tul-efremov" },
+			{ "url": "kimovsk", "slug": "ru-tul-kimovsk" },
+			{ "url": "kireevsk", "slug": "ru-tul-kireevsk" },
+			{ "url": "lipki", "slug": "ru-tul-lipki" },
+			{ "url": "novomoskovsk", "slug": "ru-tul-novomoskovsk" },
+			{ "url": "plavsk", "slug": "ru-tul-plavsk" },
+			{ "url": "sovetsk-tul", "slug": "ru-tul-sovetsk" },
+			{ "url": "suvorov", "slug": "ru-tul-suvorov" },
+			{ "url": "uzlovaya", "slug": "ru-tul-uzlovaya" },
+			{ "url": "chekalin", "slug": "ru-tul-chekalin" },
+			{ "url": "shhyokino", "slug": "ru-tul-shhyokino" },
+			{ "url": "yasnogorsk", "slug": "ru-tul-yasnogorsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tula", "slug": "tula" }
+	},
+	"tver": {
+		"langs": [],
+		"cities": [
+			{ "url": "andreapol", "slug": "ru-tve-andreapol" },
+			{ "url": "bezheck", "slug": "ru-tve-bezheck" },
+			{ "url": "beliy", "slug": "ru-tve-beliy" },
+			{ "url": "bologoe", "slug": "ru-tve-bologoe" },
+			{ "url": "vesegonsk", "slug": "ru-tve-vesegonsk" },
+			{ "url": "vishniy-volochyok", "slug": "ru-tve-vishniy-volochyok" },
+			{ "url": "zapadnaya-dvina", "slug": "ru-tve-zapadnaya-dvina" },
+			{ "url": "zubcov", "slug": "ru-tve-zubcov" },
+			{ "url": "kalyazin", "slug": "ru-tve-kalyazin" },
+			{ "url": "kashin", "slug": "ru-tve-kashin" },
+			{ "url": "kimri", "slug": "ru-tve-kimri" },
+			{ "url": "konakovo", "slug": "ru-tve-konakovo" },
+			{ "url": "krasniy-holm", "slug": "ru-tve-krasniy-holm" },
+			{ "url": "kuvshinovo", "slug": "ru-tve-kuvshinovo" },
+			{ "url": "lihoslavl", "slug": "ru-tve-lihoslavl" },
+			{ "url": "nelidovo", "slug": "ru-tve-nelidovo" },
+			{ "url": "ostashkov", "slug": "ru-tve-ostashkov" },
+			{ "url": "rzhev", "slug": "ru-tve-rzhev" },
+			{ "url": "starica", "slug": "ru-tve-starica" },
+			{ "url": "torzhok", "slug": "ru-tve-torzhok" },
+			{ "url": "toropec", "slug": "ru-tve-toropec" },
+			{ "url": "udomlya", "slug": "ru-tve-udomlya" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tver", "slug": "tver" }
+	},
+	"sevastopol": {
+		"langs": [],
+		"cities": [
+			{ "url": "alupka", "slug": "ru-crm-alupka" },
+			{ "url": "alushta", "slug": "ru-crm-alushta" },
+			{ "url": "armyansk", "slug": "ru-crm-armyansk" },
+			{ "url": "bahchisaray", "slug": "ru-crm-bahchisaray" },
+			{ "url": "belogorsk-crm", "slug": "ru-crm-belogorsk" },
+			{ "url": "dzhankoy", "slug": "ru-crm-dzhankoy" },
+			{ "url": "evpatoriya", "slug": "ru-crm-evpatoriya" },
+			{ "url": "kerch", "slug": "ru-crm-kerch" },
+			{ "url": "krasnoperekopsk", "slug": "ru-crm-krasnoperekopsk" },
+			{ "url": "saki", "slug": "ru-crm-saki" },
+			{ "url": "simferopol", "slug": "ru-crm-simferopol" },
+			{ "url": "stariy-krim", "slug": "ru-crm-stariy-krim" },
+			{ "url": "sudak", "slug": "ru-crm-sudak" },
+			{ "url": "feodosiya", "slug": "ru-crm-feodosiya" },
+			{ "url": "shhyolkino", "slug": "ru-crm-shhyolkino" },
+			{ "url": "yalta", "slug": "ru-crm-yalta" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "sevastopol", "slug": "sevastopol" }
+	},
+	"anadir": {
+		"langs": [],
+		"cities": [
+			{ "url": "bilibino", "slug": "ru-chu-bilibino" },
+			{ "url": "pevek", "slug": "ru-chu-pevek" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "anadir", "slug": "anadir" }
+	},
+	"habarovsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "amursk", "slug": "ru-kha-amursk" },
+			{ "url": "bikin", "slug": "ru-kha-bikin" },
+			{ "url": "vyazemskiy", "slug": "ru-kha-vyazemskiy" },
+			{
+				"url": "komsomolsk-na-amure",
+				"slug": "ru-kha-komsomolsk-na-amure"
+			},
+			{
+				"url": "nikolaevsk-na-amure",
+				"slug": "ru-kha-nikolaevsk-na-amure"
+			},
+			{ "url": "sovetskaya-gavan", "slug": "ru-kha-sovetskaya-gavan" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "habarovsk", "slug": "habarovsk" }
+	},
+	"kemerovo": {
+		"langs": [],
+		"cities": [
+			{ "url": "anzhero-sudzhensk", "slug": "ru-kem-anzhero-sudzhensk" },
+			{ "url": "belovo", "slug": "ru-kem-belovo" },
+			{ "url": "beryozovskiy-kem", "slug": "ru-kem-beryozovskiy" },
+			{ "url": "gurevsk-kem", "slug": "ru-kem-gurevsk" },
+			{ "url": "kaltan", "slug": "ru-kem-kaltan" },
+			{ "url": "kiselyovsk", "slug": "ru-kem-kiselyovsk" },
+			{ "url": "leninsk-kuzneckiy", "slug": "ru-kem-leninsk-kuzneckiy" },
+			{ "url": "mariinsk", "slug": "ru-kem-mariinsk" },
+			{ "url": "mezhdurechensk", "slug": "ru-kem-mezhdurechensk" },
+			{ "url": "miski", "slug": "ru-kem-miski" },
+			{ "url": "novokuzneck", "slug": "ru-kem-novokuzneck" },
+			{ "url": "osinniki", "slug": "ru-kem-osinniki" },
+			{ "url": "polisaevo", "slug": "ru-kem-polisaevo" },
+			{ "url": "prokopevsk", "slug": "ru-kem-prokopevsk" },
+			{ "url": "salair", "slug": "ru-kem-salair" },
+			{ "url": "tayga", "slug": "ru-kem-tayga" },
+			{ "url": "tashtagol", "slug": "ru-kem-tashtagol" },
+			{ "url": "topki", "slug": "ru-kem-topki" },
+			{ "url": "yurga", "slug": "ru-kem-yurga" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kemerovo", "slug": "kemerovo" }
+	},
+	"moskva": {
+		"langs": [],
+		"cities": [
+			{ "url": "aprelevka", "slug": "ru-mos-aprelevka" },
+			{ "url": "balashiha", "slug": "ru-mos-balashiha" },
+			{ "url": "beloozyorskiy", "slug": "ru-mos-beloozyorskiy" },
+			{ "url": "bronnici", "slug": "ru-mos-bronnici" },
+			{ "url": "vereya", "slug": "ru-mos-vereya" },
+			{ "url": "vidnoe", "slug": "ru-mos-vidnoe" },
+			{ "url": "volokolamsk", "slug": "ru-mos-volokolamsk" },
+			{ "url": "visokovsk", "slug": "ru-mos-visokovsk" },
+			{ "url": "voskresensk", "slug": "ru-mos-voskresensk" },
+			{ "url": "golicino", "slug": "ru-mos-golicino" },
+			{ "url": "dedovsk", "slug": "ru-mos-dedovsk" },
+			{ "url": "dmitrov", "slug": "ru-mos-dmitrov" },
+			{ "url": "dzerzhinskiy", "slug": "ru-mos-dzerzhinskiy" },
+			{ "url": "domodedovo", "slug": "ru-mos-domodedovo" },
+			{ "url": "drezna", "slug": "ru-mos-drezna" },
+			{ "url": "dubna", "slug": "ru-mos-dubna" },
+			{ "url": "egorevsk", "slug": "ru-mos-egorevsk" },
+			{ "url": "dolgoprudniy", "slug": "ru-mos-dolgoprudniy" },
+			{ "url": "zhukovskiy", "slug": "ru-mos-zhukovskiy" },
+			{ "url": "zaraysk", "slug": "ru-mos-zaraysk" },
+			{ "url": "zvenigorod", "slug": "ru-mos-zvenigorod" },
+			{ "url": "ivanteevka", "slug": "ru-mos-ivanteevka" },
+			{ "url": "istra", "slug": "ru-mos-istra" },
+			{ "url": "kashira", "slug": "ru-mos-kashira" },
+			{ "url": "klin", "slug": "ru-mos-klin" },
+			{ "url": "kolomna", "slug": "ru-mos-kolomna" },
+			{ "url": "korolyov", "slug": "ru-mos-korolyov" },
+			{ "url": "kotelniki", "slug": "ru-mos-kotelniki" },
+			{ "url": "krasnoarmeysk-mos", "slug": "ru-mos-krasnoarmeysk" },
+			{ "url": "krasnogorsk", "slug": "ru-mos-krasnogorsk" },
+			{ "url": "krasnozavodsk", "slug": "ru-mos-krasnozavodsk" },
+			{ "url": "krasnoznamensk-mos", "slug": "ru-mos-krasnoznamensk" },
+			{ "url": "kubinka", "slug": "ru-mos-kubinka" },
+			{ "url": "kurovskoe", "slug": "ru-mos-kurovskoe" },
+			{ "url": "likino-dulyovo", "slug": "ru-mos-likino-dulyovo" },
+			{ "url": "losino-petrovskiy", "slug": "ru-mos-losino-petrovskiy" },
+			{ "url": "luhovici", "slug": "ru-mos-luhovici" },
+			{ "url": "litkarino", "slug": "ru-mos-litkarino" },
+			{ "url": "lobnya", "slug": "ru-mos-lobnya" },
+			{ "url": "lyuberci", "slug": "ru-mos-lyuberci" },
+			{ "url": "mozhaysk", "slug": "ru-mos-mozhaysk" },
+			{ "url": "mitishhi", "slug": "ru-mos-mitishhi" },
+			{ "url": "naro-fominsk", "slug": "ru-mos-naro-fominsk" },
+			{ "url": "noginsk", "slug": "ru-mos-noginsk" },
+			{ "url": "odincovo", "slug": "ru-mos-odincovo" },
+			{ "url": "ozyori", "slug": "ru-mos-ozyori" },
+			{ "url": "orehovo-zuevo", "slug": "ru-mos-orehovo-zuevo" },
+			{ "url": "pavlovskiy-posad", "slug": "ru-mos-pavlovskiy-posad" },
+			{ "url": "peresvet", "slug": "ru-mos-peresvet" },
+			{ "url": "podolsk", "slug": "ru-mos-podolsk" },
+			{ "url": "protvino", "slug": "ru-mos-protvino" },
+			{ "url": "pushkino", "slug": "ru-mos-pushkino" },
+			{ "url": "pushhino", "slug": "ru-mos-pushhino" },
+			{ "url": "ramenskoe", "slug": "ru-mos-ramenskoe" },
+			{ "url": "roshal", "slug": "ru-mos-roshal" },
+			{ "url": "ruza", "slug": "ru-mos-ruza" },
+			{ "url": "reutov", "slug": "ru-mos-reutov" },
+			{ "url": "sergiev-posad", "slug": "ru-mos-sergiev-posad" },
+			{ "url": "serpuhov", "slug": "ru-mos-serpuhov" },
+			{ "url": "solnechnogorsk", "slug": "ru-mos-solnechnogorsk" },
+			{ "url": "staraya-kupavna", "slug": "ru-mos-staraya-kupavna" },
+			{ "url": "stupino", "slug": "ru-mos-stupino" },
+			{ "url": "taldom", "slug": "ru-mos-taldom" },
+			{ "url": "fryazino", "slug": "ru-mos-fryazino" },
+			{ "url": "himki", "slug": "ru-mos-himki" },
+			{ "url": "hotkovo", "slug": "ru-mos-hotkovo" },
+			{ "url": "chernogolovka", "slug": "ru-mos-chernogolovka" },
+			{ "url": "chehov", "slug": "ru-mos-chehov" },
+			{ "url": "shatura", "slug": "ru-mos-shatura" },
+			{ "url": "shhyolkovo", "slug": "ru-mos-shhyolkovo" },
+			{ "url": "elektrostal", "slug": "ru-mos-elektrostal" },
+			{ "url": "elektrogorsk", "slug": "ru-mos-elektrogorsk" },
+			{ "url": "elektrougli", "slug": "ru-mos-elektrougli" },
+			{ "url": "yahroma", "slug": "ru-mos-yahroma" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "moskva", "slug": "msk" }
+	},
+	"saransk": {
+		"langs": [],
+		"cities": [
+			{ "url": "ardatov", "slug": "ru-mo-ardatov" },
+			{ "url": "insar", "slug": "ru-mo-insar" },
+			{ "url": "kovilkino", "slug": "ru-mo-kovilkino" },
+			{ "url": "krasnoslobodsk-mo", "slug": "ru-mo-krasnoslobodsk" },
+			{ "url": "ruzaevka", "slug": "ru-mo-ruzaevka" },
+			{ "url": "temnikov", "slug": "ru-mo-temnikov" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "saransk", "slug": "saransk" }
+	},
+	"vladivostok": {
+		"langs": [],
+		"cities": [
+			{ "url": "artyom", "slug": "ru-pri-artyom" },
+			{ "url": "arsenev", "slug": "ru-pri-arsenev" },
+			{ "url": "bolshoy-kamen", "slug": "ru-pri-bolshoy-kamen" },
+			{ "url": "dalnegorsk", "slug": "ru-pri-dalnegorsk" },
+			{ "url": "dalnerechensk", "slug": "ru-pri-dalnerechensk" },
+			{ "url": "lesozavodsk", "slug": "ru-pri-lesozavodsk" },
+			{ "url": "nahodka", "slug": "ru-pri-nahodka" },
+			{ "url": "partizansk", "slug": "ru-pri-partizansk" },
+			{ "url": "spassk-dalniy", "slug": "ru-pri-spassk-dalniy" },
+			{ "url": "ussuriysk", "slug": "ru-pri-ussuriysk" },
+			{ "url": "fokino-pri", "slug": "ru-pri-fokino" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "vladivostok", "slug": "vladivostok" }
+	},
+	"murmansk": {
+		"langs": [],
+		"cities": [
+			{ "url": "apatiti", "slug": "ru-mur-apatiti" },
+			{ "url": "gadzhievo", "slug": "ru-mur-gadzhievo" },
+			{ "url": "zapolyarniy", "slug": "ru-mur-zapolyarniy" },
+			{ "url": "zaozyorsk", "slug": "ru-mur-zaozyorsk" },
+			{ "url": "kandalaksha", "slug": "ru-mur-kandalaksha" },
+			{ "url": "kirovsk-mur", "slug": "ru-mur-kirovsk" },
+			{ "url": "kovdor", "slug": "ru-mur-kovdor" },
+			{ "url": "kola", "slug": "ru-mur-kola" },
+			{ "url": "monchegorsk", "slug": "ru-mur-monchegorsk" },
+			{ "url": "olenegorsk", "slug": "ru-mur-olenegorsk" },
+			{ "url": "ostrovnoy", "slug": "ru-mur-ostrovnoy" },
+			{ "url": "polyarniy", "slug": "ru-mur-polyarniy" },
+			{ "url": "polyarnie-zori", "slug": "ru-mur-polyarnie-zori" },
+			{ "url": "severomorsk", "slug": "ru-mur-severomorsk" },
+			{ "url": "snezhnogorsk", "slug": "ru-mur-snezhnogorsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "murmansk", "slug": "murmansk" }
+	},
+	"grozniy": {
+		"langs": [],
+		"cities": [
+			{ "url": "argun", "slug": "ru-ce-argun" },
+			{ "url": "gudermes", "slug": "ru-ce-gudermes" },
+			{ "url": "kurchaloy", "slug": "ru-ce-kurchaloy" },
+			{ "url": "urus-martan", "slug": "ru-ce-urus-martan" },
+			{ "url": "shali", "slug": "ru-ce-shali" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "grozniy", "slug": "grozniy" }
+	},
+	"nizhniy-novgorod": {
+		"langs": [],
+		"cities": [
+			{ "url": "arzamas", "slug": "ru-niz-arzamas" },
+			{ "url": "balahna", "slug": "ru-niz-balahna" },
+			{ "url": "bogorodsk", "slug": "ru-niz-bogorodsk" },
+			{ "url": "bor", "slug": "ru-niz-bor" },
+			{ "url": "vetluga", "slug": "ru-niz-vetluga" },
+			{ "url": "volodarsk", "slug": "ru-niz-volodarsk" },
+			{ "url": "viksa", "slug": "ru-niz-viksa" },
+			{ "url": "vorsma", "slug": "ru-niz-vorsma" },
+			{ "url": "gorodec", "slug": "ru-niz-gorodec" },
+			{ "url": "gorbatov", "slug": "ru-niz-gorbatov" },
+			{ "url": "dzerzhinsk-niz", "slug": "ru-niz-dzerzhinsk" },
+			{ "url": "zavolzhe", "slug": "ru-niz-zavolzhe" },
+			{ "url": "knyaginino", "slug": "ru-niz-knyaginino" },
+			{ "url": "kstovo", "slug": "ru-niz-kstovo" },
+			{ "url": "kulebaki", "slug": "ru-niz-kulebaki" },
+			{ "url": "lukoyanov", "slug": "ru-niz-lukoyanov" },
+			{ "url": "liskovo", "slug": "ru-niz-liskovo" },
+			{ "url": "navashino", "slug": "ru-niz-navashino" },
+			{ "url": "pavlovo", "slug": "ru-niz-pavlovo" },
+			{ "url": "pervomaysk", "slug": "ru-niz-pervomaysk" },
+			{ "url": "perevoz", "slug": "ru-niz-perevoz" },
+			{ "url": "sarov", "slug": "ru-niz-sarov" },
+			{ "url": "semyonov", "slug": "ru-niz-semyonov" },
+			{ "url": "sergach", "slug": "ru-niz-sergach" },
+			{ "url": "uren", "slug": "ru-niz-uren" },
+			{ "url": "chkalovsk", "slug": "ru-niz-chkalovsk" },
+			{ "url": "shahunya", "slug": "ru-niz-shahunya" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "nizhniy-novgorod", "slug": "nn" }
+	},
+	"saratov": {
+		"langs": [],
+		"cities": [
+			{ "url": "arkadak", "slug": "ru-sar-arkadak" },
+			{ "url": "atkarsk", "slug": "ru-sar-atkarsk" },
+			{ "url": "balakovo", "slug": "ru-sar-balakovo" },
+			{ "url": "balashov", "slug": "ru-sar-balashov" },
+			{ "url": "volsk", "slug": "ru-sar-volsk" },
+			{ "url": "ershov", "slug": "ru-sar-ershov" },
+			{ "url": "kalininsk", "slug": "ru-sar-kalininsk" },
+			{ "url": "krasnoarmeysk-sar", "slug": "ru-sar-krasnoarmeysk" },
+			{ "url": "krasniy-kut", "slug": "ru-sar-krasniy-kut" },
+			{ "url": "marks", "slug": "ru-sar-marks" },
+			{ "url": "novouzensk", "slug": "ru-sar-novouzensk" },
+			{ "url": "petrovsk", "slug": "ru-sar-petrovsk" },
+			{ "url": "pugachyov", "slug": "ru-sar-pugachyov" },
+			{ "url": "rtishhevo", "slug": "ru-sar-rtishhevo" },
+			{ "url": "hvalinsk", "slug": "ru-sar-hvalinsk" },
+			{ "url": "shihani", "slug": "ru-sar-shihani" },
+			{ "url": "engels", "slug": "ru-sar-engels" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "saratov", "slug": "saratov" }
+	},
+	"krasnoyarsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "artyomovsk", "slug": "ru-kya-artyomovsk" },
+			{ "url": "achinsk", "slug": "ru-kya-achinsk" },
+			{ "url": "bogotol", "slug": "ru-kya-bogotol" },
+			{ "url": "borodino", "slug": "ru-kya-borodino" },
+			{ "url": "divnogorsk", "slug": "ru-kya-divnogorsk" },
+			{ "url": "dudinka", "slug": "ru-kya-dudinka" },
+			{ "url": "eniseysk", "slug": "ru-kya-eniseysk" },
+			{ "url": "zheleznogorsk-kya", "slug": "ru-kya-zheleznogorsk" },
+			{ "url": "zaozyorniy", "slug": "ru-kya-zaozyorniy" },
+			{ "url": "zelenogorsk", "slug": "ru-kya-zelenogorsk" },
+			{ "url": "ilanskiy", "slug": "ru-kya-ilanskiy" },
+			{ "url": "igarka", "slug": "ru-kya-igarka" },
+			{ "url": "kansk", "slug": "ru-kya-kansk" },
+			{ "url": "kodinsk", "slug": "ru-kya-kodinsk" },
+			{ "url": "lesosibirsk", "slug": "ru-kya-lesosibirsk" },
+			{ "url": "minusinsk", "slug": "ru-kya-minusinsk" },
+			{ "url": "nazarovo", "slug": "ru-kya-nazarovo" },
+			{ "url": "norilsk", "slug": "ru-kya-norilsk" },
+			{ "url": "sosnovoborsk", "slug": "ru-kya-sosnovoborsk" },
+			{ "url": "uzhur", "slug": "ru-kya-uzhur" },
+			{ "url": "uyar", "slug": "ru-kya-uyar" },
+			{ "url": "sharipovo", "slug": "ru-kya-sharipovo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "krasnoyarsk", "slug": "krasnoyarsk" }
+	},
+	"tomsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "asino", "slug": "ru-tom-asino" },
+			{ "url": "kedroviy", "slug": "ru-tom-kedroviy" },
+			{ "url": "kolpashevo", "slug": "ru-tom-kolpashevo" },
+			{ "url": "seversk", "slug": "ru-tom-seversk" },
+			{ "url": "strezhevoy", "slug": "ru-tom-strezhevoy" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tomsk", "slug": "tomsk" }
+	},
+	"chelyabinsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "asha", "slug": "ru-che-asha" },
+			{ "url": "bakal", "slug": "ru-che-bakal" },
+			{ "url": "verhneuralsk", "slug": "ru-che-verhneuralsk" },
+			{ "url": "verhniy-ufaley", "slug": "ru-che-verhniy-ufaley" },
+			{ "url": "emanzhelinsk", "slug": "ru-che-emanzhelinsk" },
+			{ "url": "zlatoust", "slug": "ru-che-zlatoust" },
+			{ "url": "karabash", "slug": "ru-che-karabash" },
+			{ "url": "kartali", "slug": "ru-che-kartali" },
+			{ "url": "kasli", "slug": "ru-che-kasli" },
+			{ "url": "katav-ivanovsk", "slug": "ru-che-katav-ivanovsk" },
+			{ "url": "korkino", "slug": "ru-che-korkino" },
+			{ "url": "kopeysk", "slug": "ru-che-kopeysk" },
+			{ "url": "kusa", "slug": "ru-che-kusa" },
+			{ "url": "kishtim", "slug": "ru-che-kishtim" },
+			{ "url": "magnitogorsk", "slug": "ru-che-magnitogorsk" },
+			{ "url": "minyar", "slug": "ru-che-minyar" },
+			{ "url": "miass", "slug": "ru-che-miass" },
+			{ "url": "nyazepetrovsk", "slug": "ru-che-nyazepetrovsk" },
+			{ "url": "ozyorsk-che", "slug": "ru-che-ozyorsk" },
+			{ "url": "plast", "slug": "ru-che-plast" },
+			{ "url": "satka", "slug": "ru-che-satka" },
+			{ "url": "sim", "slug": "ru-che-sim" },
+			{ "url": "snezhinsk", "slug": "ru-che-snezhinsk" },
+			{ "url": "tryohgorniy", "slug": "ru-che-tryohgorniy" },
+			{ "url": "troick", "slug": "ru-che-troick" },
+			{ "url": "ust-katav", "slug": "ru-che-ust-katav" },
+			{ "url": "chebarkul", "slug": "ru-che-chebarkul" },
+			{ "url": "yuzhnouralsk", "slug": "ru-che-yuzhnouralsk" },
+			{ "url": "yuryuzan", "slug": "ru-che-yuryuzan" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "chelyabinsk", "slug": "chelyabinsk" }
+	},
+	"arhangelsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "velsk", "slug": "ru-ark-velsk" },
+			{ "url": "kargopol", "slug": "ru-ark-kargopol" },
+			{ "url": "koryazhma", "slug": "ru-ark-koryazhma" },
+			{ "url": "kotlas", "slug": "ru-ark-kotlas" },
+			{ "url": "mezen", "slug": "ru-ark-mezen" },
+			{ "url": "mirniy-ark", "slug": "ru-ark-mirniy" },
+			{ "url": "novodvinsk", "slug": "ru-ark-novodvinsk" },
+			{ "url": "nyandoma", "slug": "ru-ark-nyandoma" },
+			{ "url": "onega", "slug": "ru-ark-onega" },
+			{ "url": "severodvinsk", "slug": "ru-ark-severodvinsk" },
+			{ "url": "solvichegodsk", "slug": "ru-ark-solvichegodsk" },
+			{ "url": "shenkursk", "slug": "ru-ark-shenkursk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "arhangelsk", "slug": "arhangelsk" }
+	},
+	"astrahan": {
+		"langs": [],
+		"cities": [
+			{ "url": "ahtubinsk", "slug": "ru-ast-ahtubinsk" },
+			{ "url": "znamensk", "slug": "ru-ast-znamensk" },
+			{ "url": "kamizyak", "slug": "ru-ast-kamizyak" },
+			{ "url": "narimanov", "slug": "ru-ast-narimanov" },
+			{ "url": "harabali", "slug": "ru-ast-harabali" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "astrahan", "slug": "astrahan" }
+	},
+	"ulan-ude": {
+		"langs": [],
+		"cities": [
+			{ "url": "babushkin", "slug": "ru-bu-babushkin" },
+			{ "url": "gusinoozyorsk", "slug": "ru-bu-gusinoozyorsk" },
+			{ "url": "zakamensk", "slug": "ru-bu-zakamensk" },
+			{ "url": "kyahta", "slug": "ru-bu-kyahta" },
+			{ "url": "severobaykalsk", "slug": "ru-bu-severobaykalsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ulan-ude", "slug": "ulan-ude" }
+	},
+	"vologda": {
+		"langs": [],
+		"cities": [
+			{ "url": "babaevo", "slug": "ru-vlg-babaevo" },
+			{ "url": "belozersk", "slug": "ru-vlg-belozersk" },
+			{ "url": "velikiy-ustyug", "slug": "ru-vlg-velikiy-ustyug" },
+			{ "url": "vitegra", "slug": "ru-vlg-vitegra" },
+			{ "url": "gryazovec", "slug": "ru-vlg-gryazovec" },
+			{ "url": "kadnikov", "slug": "ru-vlg-kadnikov" },
+			{ "url": "kirillov", "slug": "ru-vlg-kirillov" },
+			{ "url": "krasavino", "slug": "ru-vlg-krasavino" },
+			{ "url": "nikolsk-vlg", "slug": "ru-vlg-nikolsk" },
+			{ "url": "sokol", "slug": "ru-vlg-sokol" },
+			{ "url": "totma", "slug": "ru-vlg-totma" },
+			{ "url": "ustyuzhna", "slug": "ru-vlg-ustyuzhna" },
+			{ "url": "harovsk", "slug": "ru-vlg-harovsk" },
+			{ "url": "cherepovec", "slug": "ru-vlg-cherepovec" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "vologda", "slug": "vologda" }
+	},
+	"kaliningrad": {
+		"langs": [],
+		"cities": [
+			{ "url": "bagrationovsk", "slug": "ru-kgd-bagrationovsk" },
+			{ "url": "baltiysk", "slug": "ru-kgd-baltiysk" },
+			{ "url": "gvardeysk", "slug": "ru-kgd-gvardeysk" },
+			{ "url": "gurevsk-kgd", "slug": "ru-kgd-gurevsk" },
+			{ "url": "gusev", "slug": "ru-kgd-gusev" },
+			{ "url": "zelenogradsk", "slug": "ru-kgd-zelenogradsk" },
+			{ "url": "krasnoznamensk-kgd", "slug": "ru-kgd-krasnoznamensk" },
+			{ "url": "ladushkin", "slug": "ru-kgd-ladushkin" },
+			{ "url": "mamonovo", "slug": "ru-kgd-mamonovo" },
+			{ "url": "neman", "slug": "ru-kgd-neman" },
+			{ "url": "nesterov", "slug": "ru-kgd-nesterov" },
+			{ "url": "ozyorsk-kgd", "slug": "ru-kgd-ozyorsk" },
+			{ "url": "pionerskiy", "slug": "ru-kgd-pionerskiy" },
+			{ "url": "polessk", "slug": "ru-kgd-polessk" },
+			{ "url": "pravdinsk", "slug": "ru-kgd-pravdinsk" },
+			{ "url": "primorsk-kgd", "slug": "ru-kgd-primorsk" },
+			{ "url": "svetliy", "slug": "ru-kgd-svetliy" },
+			{ "url": "svetlogorsk-kgd", "slug": "ru-kgd-svetlogorsk" },
+			{ "url": "slavsk", "slug": "ru-kgd-slavsk" },
+			{ "url": "sovetsk-kgd", "slug": "ru-kgd-sovetsk" },
+			{ "url": "chernyahovsk", "slug": "ru-kgd-chernyahovsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kaliningrad", "slug": "kaliningrad" }
+	},
+	"kaluga": {
+		"langs": [],
+		"cities": [
+			{ "url": "balabanovo", "slug": "ru-klu-balabanovo" },
+			{ "url": "belousovo", "slug": "ru-klu-belousovo" },
+			{ "url": "borovsk", "slug": "ru-klu-borovsk" },
+			{ "url": "ermolino", "slug": "ru-klu-ermolino" },
+			{ "url": "zhizdra", "slug": "ru-klu-zhizdra" },
+			{ "url": "zhukov", "slug": "ru-klu-zhukov" },
+			{ "url": "kirov-klu", "slug": "ru-klu-kirov" },
+			{ "url": "kozelsk", "slug": "ru-klu-kozelsk" },
+			{ "url": "kondrovo", "slug": "ru-klu-kondrovo" },
+			{ "url": "kremyonki", "slug": "ru-klu-kremyonki" },
+			{ "url": "lyudinovo", "slug": "ru-klu-lyudinovo" },
+			{ "url": "maloyaroslavec", "slug": "ru-klu-maloyaroslavec" },
+			{ "url": "medin", "slug": "ru-klu-medin" },
+			{ "url": "meshhovsk", "slug": "ru-klu-meshhovsk" },
+			{ "url": "mosalsk", "slug": "ru-klu-mosalsk" },
+			{ "url": "obninsk", "slug": "ru-klu-obninsk" },
+			{ "url": "spas-demensk", "slug": "ru-klu-spas-demensk" },
+			{ "url": "sosenskiy", "slug": "ru-klu-sosenskiy" },
+			{ "url": "suhinichi", "slug": "ru-klu-suhinichi" },
+			{ "url": "tarusa", "slug": "ru-klu-tarusa" },
+			{ "url": "yuhnov", "slug": "ru-klu-yuhnov" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kaluga", "slug": "kaluga" }
+	},
+	"novosibirsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "barabinsk", "slug": "ru-nvs-barabinsk" },
+			{ "url": "berdsk", "slug": "ru-nvs-berdsk" },
+			{ "url": "bolotnoe", "slug": "ru-nvs-bolotnoe" },
+			{ "url": "iskitim", "slug": "ru-nvs-iskitim" },
+			{ "url": "kargat", "slug": "ru-nvs-kargat" },
+			{ "url": "karasuk", "slug": "ru-nvs-karasuk" },
+			{ "url": "kuybishev", "slug": "ru-nvs-kuybishev" },
+			{ "url": "kupino", "slug": "ru-nvs-kupino" },
+			{ "url": "ob", "slug": "ru-nvs-ob" },
+			{ "url": "tatarsk", "slug": "ru-nvs-tatarsk" },
+			{ "url": "toguchin", "slug": "ru-nvs-toguchin" },
+			{ "url": "cherepanovo", "slug": "ru-nvs-cherepanovo" },
+			{ "url": "chulim", "slug": "ru-nvs-chulim" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "novosibirsk", "slug": "novosibirsk" }
+	},
+	"ulyanovsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "barish", "slug": "ru-uly-barish" },
+			{ "url": "dimitrovgrad", "slug": "ru-uly-dimitrovgrad" },
+			{ "url": "inza", "slug": "ru-uly-inza" },
+			{ "url": "novoulyanovsk", "slug": "ru-uly-novoulyanovsk" },
+			{ "url": "sengiley", "slug": "ru-uly-sengiley" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ulyanovsk", "slug": "ulyanovsk" }
+	},
+	"penza": {
+		"langs": [],
+		"cities": [
+			{ "url": "belinskiy", "slug": "ru-pnz-belinskiy" },
+			{ "url": "gorodishhe", "slug": "ru-pnz-gorodishhe" },
+			{ "url": "zarechniy-pnz", "slug": "ru-pnz-zarechniy" },
+			{ "url": "kamenka", "slug": "ru-pnz-kamenka" },
+			{ "url": "kuzneck", "slug": "ru-pnz-kuzneck" },
+			{ "url": "nizhniy-lomov", "slug": "ru-pnz-nizhniy-lomov" },
+			{ "url": "nikolsk-pnz", "slug": "ru-pnz-nikolsk" },
+			{ "url": "serdobsk", "slug": "ru-pnz-serdobsk" },
+			{ "url": "spassk", "slug": "ru-pnz-spassk" },
+			{ "url": "sursk", "slug": "ru-pnz-sursk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "penza", "slug": "penza" }
+	},
+	"nalchik": {
+		"langs": [],
+		"cities": [
+			{ "url": "baksan", "slug": "ru-kb-baksan" },
+			{ "url": "mayskiy", "slug": "ru-kb-mayskiy" },
+			{ "url": "nartkala", "slug": "ru-kb-nartkala" },
+			{ "url": "prohladniy", "slug": "ru-kb-prohladniy" },
+			{ "url": "terek", "slug": "ru-kb-terek" },
+			{ "url": "tirniauz", "slug": "ru-kb-tirniauz" },
+			{ "url": "chegem", "slug": "ru-kb-chegem" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "nalchik", "slug": "nalchik" }
+	},
+	"chita": {
+		"langs": [],
+		"cities": [
+			{ "url": "baley", "slug": "ru-zab-baley" },
+			{ "url": "borzya", "slug": "ru-zab-borzya" },
+			{ "url": "krasnokamensk", "slug": "ru-zab-krasnokamensk" },
+			{ "url": "mogocha", "slug": "ru-zab-mogocha" },
+			{ "url": "nerchinsk", "slug": "ru-zab-nerchinsk" },
+			{
+				"url": "petrovsk-zabaykalskiy",
+				"slug": "ru-zab-petrovsk-zabaykalskiy"
+			},
+			{ "url": "sretensk", "slug": "ru-zab-sretensk" },
+			{ "url": "hilok", "slug": "ru-zab-hilok" },
+			{ "url": "shilka", "slug": "ru-zab-shilka" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "chita", "slug": "chita" }
+	},
+	"kirov-kir": {
+		"langs": [],
+		"cities": [
+			{ "url": "belaya-holunica", "slug": "ru-kir-belaya-holunica" },
+			{ "url": "vyatskie-polyani", "slug": "ru-kir-vyatskie-polyani" },
+			{ "url": "zuevka", "slug": "ru-kir-zuevka" },
+			{ "url": "kirovo-chepeck", "slug": "ru-kir-kirovo-chepeck" },
+			{ "url": "kirs", "slug": "ru-kir-kirs" },
+			{ "url": "kotelnich", "slug": "ru-kir-kotelnich" },
+			{ "url": "luza", "slug": "ru-kir-luza" },
+			{ "url": "malmizh", "slug": "ru-kir-malmizh" },
+			{ "url": "murashi", "slug": "ru-kir-murashi" },
+			{ "url": "nolinsk", "slug": "ru-kir-nolinsk" },
+			{ "url": "omutninsk", "slug": "ru-kir-omutninsk" },
+			{ "url": "orlov", "slug": "ru-kir-orlov" },
+			{ "url": "slobodskoy", "slug": "ru-kir-slobodskoy" },
+			{ "url": "sovetsk-kir", "slug": "ru-kir-sovetsk" },
+			{ "url": "sosnovka", "slug": "ru-kir-sosnovka" },
+			{ "url": "urzhum", "slug": "ru-kir-urzhum" },
+			{ "url": "yaransk", "slug": "ru-kir-yaransk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kirov-kir", "slug": "kirov" }
+	},
+	"blagoveshhensk-amu": {
+		"langs": [],
+		"cities": [
+			{ "url": "belogorsk-amu", "slug": "ru-amu-belogorsk" },
+			{ "url": "zavitinsk", "slug": "ru-amu-zavitinsk" },
+			{ "url": "zeya", "slug": "ru-amu-zeya" },
+			{ "url": "raychihinsk", "slug": "ru-amu-raychihinsk" },
+			{ "url": "svobodniy", "slug": "ru-amu-svobodniy" },
+			{ "url": "skovorodino", "slug": "ru-amu-skovorodino" },
+			{ "url": "tinda", "slug": "ru-amu-tinda" },
+			{ "url": "ciolkovskiy", "slug": "ru-amu-ciolkovskiy" },
+			{ "url": "shimanovsk", "slug": "ru-amu-shimanovsk" }
+		],
+		"default-lang": "ru",
+		"default-city": {
+			"url": "blagoveshhensk-amu",
+			"slug": "blagoveshhensk-amu"
+		}
+	},
+	"hanti-mansiysk": {
+		"langs": [],
+		"cities": [
+			{ "url": "beloyarskiy", "slug": "ru-khm-beloyarskiy" },
+			{ "url": "kogalim", "slug": "ru-khm-kogalim" },
+			{ "url": "langepas", "slug": "ru-khm-langepas" },
+			{ "url": "lyantor", "slug": "ru-khm-lyantor" },
+			{ "url": "megion", "slug": "ru-khm-megion" },
+			{ "url": "nizhnevartovsk", "slug": "ru-khm-nizhnevartovsk" },
+			{ "url": "nefteyugansk", "slug": "ru-khm-nefteyugansk" },
+			{ "url": "nyagan", "slug": "ru-khm-nyagan" },
+			{ "url": "pokachi", "slug": "ru-khm-pokachi" },
+			{ "url": "raduzhniy-khm", "slug": "ru-khm-raduzhniy" },
+			{ "url": "pit-yah", "slug": "ru-khm-pit-yah" },
+			{ "url": "sovetskiy", "slug": "ru-khm-sovetskiy" },
+			{ "url": "surgut", "slug": "ru-khm-surgut" },
+			{ "url": "uray", "slug": "ru-khm-uray" },
+			{ "url": "yugorsk", "slug": "ru-khm-yugorsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "hanti-mansiysk", "slug": "khanty-mansiysk" }
+	},
+	"petrozavodsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "belomorsk", "slug": "ru-kr-belomorsk" },
+			{ "url": "kem", "slug": "ru-kr-kem" },
+			{ "url": "kondopoga", "slug": "ru-kr-kondopoga" },
+			{ "url": "kostomuksha", "slug": "ru-kr-kostomuksha" },
+			{ "url": "lahdenpohya", "slug": "ru-kr-lahdenpohya" },
+			{ "url": "medvezhegorsk", "slug": "ru-kr-medvezhegorsk" },
+			{ "url": "olonec", "slug": "ru-kr-olonec" },
+			{ "url": "pitkyaranta", "slug": "ru-kr-pitkyaranta" },
+			{ "url": "pudozh", "slug": "ru-kr-pudozh" },
+			{ "url": "segezha", "slug": "ru-kr-segezha" },
+			{ "url": "sortavala", "slug": "ru-kr-sortavala" },
+			{ "url": "suoyarvi", "slug": "ru-kr-suoyarvi" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "petrozavodsk", "slug": "petrozavodsk" }
+	},
+	"birobidzhan": {
+		"langs": [],
+		"cities": [{ "url": "obluche", "slug": "ru-yev-obluche" }],
+		"default-lang": "ru",
+		"default-city": { "url": "birobidzhan", "slug": "birobidzhan" }
+	},
+	"voronezh": {
+		"langs": [],
+		"cities": [
+			{ "url": "bobrov", "slug": "ru-vor-bobrov" },
+			{ "url": "boguchar", "slug": "ru-vor-boguchar" },
+			{ "url": "borisoglebsk", "slug": "ru-vor-borisoglebsk" },
+			{ "url": "buturlinovka", "slug": "ru-vor-buturlinovka" },
+			{ "url": "kalach", "slug": "ru-vor-kalach" },
+			{ "url": "liski", "slug": "ru-vor-liski" },
+			{ "url": "novovoronezh", "slug": "ru-vor-novovoronezh" },
+			{ "url": "novohopyorsk", "slug": "ru-vor-novohopyorsk" },
+			{ "url": "ostrogozhsk", "slug": "ru-vor-ostrogozhsk" },
+			{ "url": "pavlovsk", "slug": "ru-vor-pavlovsk" },
+			{ "url": "povorino", "slug": "ru-vor-povorino" },
+			{ "url": "rossosh", "slug": "ru-vor-rossosh" },
+			{ "url": "semiluki", "slug": "ru-vor-semiluki" },
+			{ "url": "ertil", "slug": "ru-vor-ertil" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "voronezh", "slug": "voronezh" }
+	},
+	"sankt-peterburg": {
+		"langs": [],
+		"cities": [
+			{ "url": "boksitogorsk", "slug": "ru-len-boksitogorsk" },
+			{ "url": "volhov", "slug": "ru-len-volhov" },
+			{ "url": "volosovo", "slug": "ru-len-volosovo" },
+			{ "url": "vsevolozhsk", "slug": "ru-len-vsevolozhsk" },
+			{ "url": "viborg", "slug": "ru-len-viborg" },
+			{ "url": "visock", "slug": "ru-len-visock" },
+			{ "url": "gatchina", "slug": "ru-len-gatchina" },
+			{ "url": "ivangorod", "slug": "ru-len-ivangorod" },
+			{ "url": "kamennogorsk", "slug": "ru-len-kamennogorsk" },
+			{ "url": "kingisepp", "slug": "ru-len-kingisepp" },
+			{ "url": "kirishi", "slug": "ru-len-kirishi" },
+			{ "url": "kirovsk-len", "slug": "ru-len-kirovsk" },
+			{ "url": "kommunar", "slug": "ru-len-kommunar" },
+			{ "url": "kudrovo", "slug": "ru-len-kudrovo" },
+			{ "url": "luga", "slug": "ru-len-luga" },
+			{ "url": "lodeynoe-pole", "slug": "ru-len-lodeynoe-pole" },
+			{ "url": "lyuban-len", "slug": "ru-len-lyuban" },
+			{ "url": "murino", "slug": "ru-len-murino" },
+			{ "url": "nikolskoe", "slug": "ru-len-nikolskoe" },
+			{ "url": "novaya-ladoga", "slug": "ru-len-novaya-ladoga" },
+			{ "url": "otradnoe", "slug": "ru-len-otradnoe" },
+			{ "url": "pikalyovo", "slug": "ru-len-pikalyovo" },
+			{ "url": "podporozhe", "slug": "ru-len-podporozhe" },
+			{ "url": "priozersk-len", "slug": "ru-len-priozersk" },
+			{ "url": "primorsk-len", "slug": "ru-len-primorsk" },
+			{ "url": "svetogorsk", "slug": "ru-len-svetogorsk" },
+			{ "url": "sertolovo", "slug": "ru-len-sertolovo" },
+			{ "url": "slanci", "slug": "ru-len-slanci" },
+			{ "url": "sosnoviy-bor", "slug": "ru-len-sosnoviy-bor" },
+			{ "url": "syasstroy", "slug": "ru-len-syasstroy" },
+			{ "url": "tihvin", "slug": "ru-len-tihvin" },
+			{ "url": "tosno", "slug": "ru-len-tosno" },
+			{ "url": "shlisselburg", "slug": "ru-len-shlisselburg" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "sankt-peterburg", "slug": "spb" }
+	},
+	"oryol": {
+		"langs": [],
+		"cities": [
+			{ "url": "bolhov", "slug": "ru-orl-bolhov" },
+			{ "url": "dmitrovsk", "slug": "ru-orl-dmitrovsk" },
+			{ "url": "livni", "slug": "ru-orl-livni" },
+			{ "url": "maloarhangelsk", "slug": "ru-orl-maloarhangelsk" },
+			{ "url": "mcensk", "slug": "ru-orl-mcensk" },
+			{ "url": "novosil", "slug": "ru-orl-novosil" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "oryol", "slug": "oryol" }
+	},
+	"velikiy-novgorod": {
+		"langs": [],
+		"cities": [
+			{ "url": "borovichi", "slug": "ru-ngr-borovichi" },
+			{ "url": "valday", "slug": "ru-ngr-valday" },
+			{ "url": "malaya-vishera", "slug": "ru-ngr-malaya-vishera" },
+			{ "url": "okulovka", "slug": "ru-ngr-okulovka" },
+			{ "url": "pestovo", "slug": "ru-ngr-pestovo" },
+			{ "url": "solci", "slug": "ru-ngr-solci" },
+			{ "url": "staraya-russa", "slug": "ru-ngr-staraya-russa" },
+			{ "url": "holm", "slug": "ru-ngr-holm" },
+			{ "url": "chudovo", "slug": "ru-ngr-chudovo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "velikiy-novgorod", "slug": "vnovgorod" }
+	},
+	"mahachkala": {
+		"langs": [],
+		"cities": [
+			{ "url": "buynaksk", "slug": "ru-da-buynaksk" },
+			{ "url": "dagestanskie-ogni", "slug": "ru-da-dagestanskie-ogni" },
+			{ "url": "derbent", "slug": "ru-da-derbent" },
+			{ "url": "izberbash", "slug": "ru-da-izberbash" },
+			{ "url": "kaspiysk", "slug": "ru-da-kaspiysk" },
+			{ "url": "kizilyurt", "slug": "ru-da-kizilyurt" },
+			{ "url": "kizlyar", "slug": "ru-da-kizlyar" },
+			{ "url": "hasavyurt", "slug": "ru-da-hasavyurt" },
+			{ "url": "yuzhno-suhokumsk", "slug": "ru-da-yuzhno-suhokumsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "mahachkala", "slug": "mahachkala" }
+	},
+	"stavropol": {
+		"langs": [],
+		"cities": [
+			{ "url": "blagodarniy", "slug": "ru-sta-blagodarniy" },
+			{ "url": "budyonnovsk", "slug": "ru-sta-budyonnovsk" },
+			{ "url": "georgievsk", "slug": "ru-sta-georgievsk" },
+			{ "url": "essentuki", "slug": "ru-sta-essentuki" },
+			{ "url": "zheleznovodsk", "slug": "ru-sta-zheleznovodsk" },
+			{ "url": "zelenokumsk", "slug": "ru-sta-zelenokumsk" },
+			{ "url": "izobilniy", "slug": "ru-sta-izobilniy" },
+			{ "url": "ipatovo", "slug": "ru-sta-ipatovo" },
+			{ "url": "kislovodsk", "slug": "ru-sta-kislovodsk" },
+			{ "url": "lermontov", "slug": "ru-sta-lermontov" },
+			{ "url": "mineralnie-vodi", "slug": "ru-sta-mineralnie-vodi" },
+			{ "url": "mihaylovsk-sta", "slug": "ru-sta-mihaylovsk" },
+			{ "url": "nevinnomissk", "slug": "ru-sta-nevinnomissk" },
+			{ "url": "neftekumsk", "slug": "ru-sta-neftekumsk" },
+			{ "url": "novoaleksandrovsk", "slug": "ru-sta-novoaleksandrovsk" },
+			{ "url": "novopavlovsk", "slug": "ru-sta-novopavlovsk" },
+			{ "url": "pyatigorsk", "slug": "ru-sta-pyatigorsk" },
+			{ "url": "svetlograd", "slug": "ru-sta-svetlograd" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "stavropol", "slug": "stavropol" }
+	},
+	"smolensk": {
+		"langs": [],
+		"cities": [
+			{ "url": "velizh", "slug": "ru-smo-velizh" },
+			{ "url": "vyazma", "slug": "ru-smo-vyazma" },
+			{ "url": "gagarin", "slug": "ru-smo-gagarin" },
+			{ "url": "demidov", "slug": "ru-smo-demidov" },
+			{ "url": "desnogorsk", "slug": "ru-smo-desnogorsk" },
+			{ "url": "dorogobuzh", "slug": "ru-smo-dorogobuzh" },
+			{ "url": "duhovshhina", "slug": "ru-smo-duhovshhina" },
+			{ "url": "elnya", "slug": "ru-smo-elnya" },
+			{ "url": "pochinok", "slug": "ru-smo-pochinok" },
+			{ "url": "roslavl", "slug": "ru-smo-roslavl" },
+			{ "url": "safonovo", "slug": "ru-smo-safonovo" },
+			{ "url": "rudnya", "slug": "ru-smo-rudnya" },
+			{ "url": "sichyovka", "slug": "ru-smo-sichyovka" },
+			{ "url": "yarcevo", "slug": "ru-smo-yarcevo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "smolensk", "slug": "smolensk" }
+	},
+	"kostroma": {
+		"langs": [],
+		"cities": [
+			{ "url": "buy", "slug": "ru-kos-buy" },
+			{ "url": "volgorechensk", "slug": "ru-kos-volgorechensk" },
+			{ "url": "galich", "slug": "ru-kos-galich" },
+			{ "url": "kologriv", "slug": "ru-kos-kologriv" },
+			{ "url": "makarev", "slug": "ru-kos-makarev" },
+			{ "url": "manturovo", "slug": "ru-kos-manturovo" },
+			{ "url": "nerehta", "slug": "ru-kos-nerehta" },
+			{ "url": "neya", "slug": "ru-kos-neya" },
+			{ "url": "soligalich", "slug": "ru-kos-soligalich" },
+			{ "url": "chuhloma", "slug": "ru-kos-chuhloma" },
+			{ "url": "sharya", "slug": "ru-kos-sharya" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kostroma", "slug": "kostroma" }
+	},
+	"bryansk": {
+		"langs": [],
+		"cities": [
+			{ "url": "dyatkovo", "slug": "ru-bry-dyatkovo" },
+			{ "url": "zhukovka", "slug": "ru-bry-zhukovka" },
+			{ "url": "zlinka", "slug": "ru-bry-zlinka" },
+			{ "url": "karachev", "slug": "ru-bry-karachev" },
+			{ "url": "klinci", "slug": "ru-bry-klinci" },
+			{ "url": "mglin", "slug": "ru-bry-mglin" },
+			{ "url": "novozibkov", "slug": "ru-bry-novozibkov" },
+			{ "url": "pochep", "slug": "ru-bry-pochep" },
+			{ "url": "sevsk", "slug": "ru-bry-sevsk" },
+			{ "url": "selco", "slug": "ru-bry-selco" },
+			{ "url": "starodub", "slug": "ru-bry-starodub" },
+			{ "url": "surazh", "slug": "ru-bry-surazh" },
+			{ "url": "trubchevsk", "slug": "ru-bry-trubchevsk" },
+			{ "url": "unecha", "slug": "ru-bry-unecha" },
+			{ "url": "fokino-bry", "slug": "ru-bry-fokino" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "bryansk", "slug": "bryansk" }
+	},
+	"pskov": {
+		"langs": [],
+		"cities": [
+			{ "url": "velikie-luki", "slug": "ru-psk-velikie-luki" },
+			{ "url": "gdov", "slug": "ru-psk-gdov" },
+			{ "url": "dno", "slug": "ru-psk-dno" },
+			{ "url": "nevel", "slug": "ru-psk-nevel" },
+			{ "url": "novorzhev", "slug": "ru-psk-novorzhev" },
+			{ "url": "novosokolniki", "slug": "ru-psk-novosokolniki" },
+			{ "url": "opochka", "slug": "ru-psk-opochka" },
+			{ "url": "ostrov", "slug": "ru-psk-ostrov" },
+			{ "url": "pechori", "slug": "ru-psk-pechori" },
+			{ "url": "porhov", "slug": "ru-psk-porhov" },
+			{ "url": "pustoshka", "slug": "ru-psk-pustoshka" },
+			{ "url": "pitalovo", "slug": "ru-psk-pitalovo" },
+			{ "url": "sebezh", "slug": "ru-psk-sebezh" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "pskov", "slug": "pskov" }
+	},
+	"petropavlovsk-kamchatskiy": {
+		"langs": [],
+		"cities": [
+			{ "url": "vilyuchinsk", "slug": "ru-kam-vilyuchinsk" },
+			{ "url": "elizovo", "slug": "ru-kam-elizovo" }
+		],
+		"default-lang": "ru",
+		"default-city": {
+			"url": "petropavlovsk-kamchatskiy",
+			"slug": "petropavlovsk-kamchatskiy"
+		}
+	},
+	"ivanovo-iva": {
+		"langs": [],
+		"cities": [
+			{ "url": "vichuga", "slug": "ru-iva-vichuga" },
+			{ "url": "gavrilov-posad", "slug": "ru-iva-gavrilov-posad" },
+			{ "url": "zavolzhsk", "slug": "ru-iva-zavolzhsk" },
+			{ "url": "kineshma", "slug": "ru-iva-kineshma" },
+			{ "url": "komsomolsk", "slug": "ru-iva-komsomolsk" },
+			{ "url": "kohma", "slug": "ru-iva-kohma" },
+			{ "url": "navoloki", "slug": "ru-iva-navoloki" },
+			{ "url": "plyos", "slug": "ru-iva-plyos" },
+			{ "url": "privolzhsk", "slug": "ru-iva-privolzhsk" },
+			{ "url": "puchezh", "slug": "ru-iva-puchezh" },
+			{ "url": "rodniki", "slug": "ru-iva-rodniki" },
+			{ "url": "teykovo", "slug": "ru-iva-teykovo" },
+			{ "url": "furmanov", "slug": "ru-iva-furmanov" },
+			{ "url": "shuya", "slug": "ru-iva-shuya" },
+			{ "url": "yuzha", "slug": "ru-iva-yuzha" },
+			{ "url": "yurevec", "slug": "ru-iva-yurevec" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ivanovo-iva", "slug": "ivanovo" }
+	},
+	"volgograd": {
+		"langs": [],
+		"cities": [
+			{ "url": "volzhskiy", "slug": "ru-vgg-volzhskiy" },
+			{ "url": "dubovka", "slug": "ru-vgg-dubovka" },
+			{ "url": "zhirnovsk", "slug": "ru-vgg-zhirnovsk" },
+			{ "url": "kalach-na-donu", "slug": "ru-vgg-kalach-na-donu" },
+			{ "url": "kamishin", "slug": "ru-vgg-kamishin" },
+			{ "url": "kotelnikovo", "slug": "ru-vgg-kotelnikovo" },
+			{ "url": "kotovo", "slug": "ru-vgg-kotovo" },
+			{ "url": "krasnoslobodsk-vgg", "slug": "ru-vgg-krasnoslobodsk" },
+			{ "url": "leninsk", "slug": "ru-vgg-leninsk" },
+			{ "url": "mihaylovka", "slug": "ru-vgg-mihaylovka" },
+			{ "url": "nikolaevsk", "slug": "ru-vgg-nikolaevsk" },
+			{ "url": "novoanninskiy", "slug": "ru-vgg-novoanninskiy" },
+			{ "url": "pallasovka", "slug": "ru-vgg-pallasovka" },
+			{ "url": "petrov-val", "slug": "ru-vgg-petrov-val" },
+			{ "url": "serafimovich", "slug": "ru-vgg-serafimovich" },
+			{ "url": "surovikino", "slug": "ru-vgg-surovikino" },
+			{ "url": "uryupinsk", "slug": "ru-vgg-uryupinsk" },
+			{ "url": "frolovo", "slug": "ru-vgg-frolovo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "volgograd", "slug": "volgograd" }
+	},
+	"yaroslavl": {
+		"langs": [],
+		"cities": [
+			{ "url": "gavrilov-yam", "slug": "ru-yar-gavrilov-yam" },
+			{ "url": "danilov", "slug": "ru-yar-danilov" },
+			{ "url": "lyubim", "slug": "ru-yar-lyubim" },
+			{ "url": "mishkin", "slug": "ru-yar-mishkin" },
+			{
+				"url": "pereslavl-zalesskiy",
+				"slug": "ru-yar-pereslavl-zalesskiy"
+			},
+			{ "url": "poshehone", "slug": "ru-yar-poshehone" },
+			{ "url": "rostov", "slug": "ru-yar-rostov" },
+			{ "url": "ribinsk", "slug": "ru-yar-ribinsk" },
+			{ "url": "tutaev", "slug": "ru-yar-tutaev" },
+			{ "url": "uglich", "slug": "ru-yar-uglich" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "yaroslavl", "slug": "yaroslavl" }
+	},
+	"yoshkar-ola": {
+		"langs": [],
+		"cities": [
+			{ "url": "volzhsk", "slug": "ru-me-volzhsk" },
+			{ "url": "zvenigovo", "slug": "ru-me-zvenigovo" },
+			{ "url": "kozmodemyansk", "slug": "ru-me-kozmodemyansk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "yoshkar-ola", "slug": "yoshkar-ola" }
+	},
+	"izhevsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "votkinsk", "slug": "ru-ud-votkinsk" },
+			{ "url": "glazov", "slug": "ru-ud-glazov" },
+			{ "url": "kambarka", "slug": "ru-ud-kambarka" },
+			{ "url": "mozhga", "slug": "ru-ud-mozhga" },
+			{ "url": "sarapul", "slug": "ru-ud-sarapul" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "izhevsk", "slug": "izhevsk" }
+	},
+	"siktivkar": {
+		"langs": [],
+		"cities": [
+			{ "url": "vorkuta", "slug": "ru-ko-vorkuta" },
+			{ "url": "vuktil", "slug": "ru-ko-vuktil" },
+			{ "url": "emva", "slug": "ru-ko-emva" },
+			{ "url": "inta", "slug": "ru-ko-inta" },
+			{ "url": "mikun", "slug": "ru-ko-mikun" },
+			{ "url": "pechora", "slug": "ru-ko-pechora" },
+			{ "url": "sosnogorsk", "slug": "ru-ko-sosnogorsk" },
+			{ "url": "usinsk", "slug": "ru-ko-usinsk" },
+			{ "url": "uhta", "slug": "ru-ko-uhta" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "siktivkar", "slug": "siktivkar" }
+	},
+	"gorno-altaysk": {
+		"langs": [],
+		"cities": [],
+		"default-lang": "ru",
+		"default-city": { "url": "gorno-altaysk", "slug": "gorno-altaysk" }
+	},
+	"lipeck": {
+		"langs": [],
+		"cities": [
+			{ "url": "gryazi", "slug": "ru-lip-gryazi" },
+			{ "url": "dankov", "slug": "ru-lip-dankov" },
+			{ "url": "elec", "slug": "ru-lip-elec" },
+			{ "url": "zadonsk", "slug": "ru-lip-zadonsk" },
+			{ "url": "lebedyan", "slug": "ru-lip-lebedyan" },
+			{ "url": "usman", "slug": "ru-lip-usman" },
+			{ "url": "chapligin", "slug": "ru-lip-chapligin" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "lipeck", "slug": "lipeck" }
+	},
+	"salehard": {
+		"langs": [],
+		"cities": [
+			{ "url": "gubkinskiy", "slug": "ru-yan-gubkinskiy" },
+			{ "url": "labitnangi", "slug": "ru-yan-labitnangi" },
+			{ "url": "muravlenko", "slug": "ru-yan-muravlenko" },
+			{ "url": "nadim", "slug": "ru-yan-nadim" },
+			{ "url": "noviy-urengoy", "slug": "ru-yan-noviy-urengoy" },
+			{ "url": "noyabrsk", "slug": "ru-yan-noyabrsk" },
+			{ "url": "tarko-sale", "slug": "ru-yan-tarko-sale" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "salehard", "slug": "salehard" }
+	},
+	"kurgan": {
+		"langs": [],
+		"cities": [
+			{ "url": "dalmatovo", "slug": "ru-kgn-dalmatovo" },
+			{ "url": "kataysk", "slug": "ru-kgn-kataysk" },
+			{ "url": "kurtamish", "slug": "ru-kgn-kurtamish" },
+			{ "url": "makushino", "slug": "ru-kgn-makushino" },
+			{ "url": "petuhovo", "slug": "ru-kgn-petuhovo" },
+			{ "url": "shadrinsk", "slug": "ru-kgn-shadrinsk" },
+			{ "url": "shumiha", "slug": "ru-kgn-shumiha" },
+			{ "url": "shhuche", "slug": "ru-kgn-shhuche" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kurgan", "slug": "kurgan" }
+	},
+	"kursk": {
+		"langs": [],
+		"cities": [
+			{ "url": "dmitriev", "slug": "ru-krs-dmitriev" },
+			{ "url": "zheleznogorsk-krs", "slug": "ru-krs-zheleznogorsk" },
+			{ "url": "kurchatov-krs", "slug": "ru-krs-kurchatov" },
+			{ "url": "lgov", "slug": "ru-krs-lgov" },
+			{ "url": "oboyan", "slug": "ru-krs-oboyan" },
+			{ "url": "rilsk", "slug": "ru-krs-rilsk" },
+			{ "url": "sudzha", "slug": "ru-krs-sudzha" },
+			{ "url": "fatezh", "slug": "ru-krs-fatezh" },
+			{ "url": "shhigri", "slug": "ru-krs-shhigri" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kursk", "slug": "kursk" }
+	},
+	"elista": {
+		"langs": [],
+		"cities": [
+			{ "url": "gorodovikovsk", "slug": "ru-kl-gorodovikovsk" },
+			{ "url": "lagan", "slug": "ru-kl-lagan" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "elista", "slug": "elista" }
+	},
+	"samara": {
+		"langs": [],
+		"cities": [
+			{ "url": "zhigulyovsk", "slug": "ru-sam-zhigulyovsk" },
+			{ "url": "kinel", "slug": "ru-sam-kinel" },
+			{ "url": "neftegorsk", "slug": "ru-sam-neftegorsk" },
+			{ "url": "novokuybishevsk", "slug": "ru-sam-novokuybishevsk" },
+			{ "url": "oktyabrsk", "slug": "ru-sam-oktyabrsk" },
+			{ "url": "otradniy", "slug": "ru-sam-otradniy" },
+			{ "url": "pohvistnevo", "slug": "ru-sam-pohvistnevo" },
+			{ "url": "sizran", "slug": "ru-sam-sizran" },
+			{ "url": "tolyatti", "slug": "ru-sam-tolyatti" },
+			{ "url": "chapaevsk", "slug": "ru-sam-chapaevsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "samara", "slug": "samara" }
+	},
+	"tambov": {
+		"langs": [],
+		"cities": [
+			{ "url": "zherdevka", "slug": "ru-tam-zherdevka" },
+			{ "url": "kirsanov", "slug": "ru-tam-kirsanov" },
+			{ "url": "kotovsk", "slug": "ru-tam-kotovsk" },
+			{ "url": "michurinsk", "slug": "ru-tam-michurinsk" },
+			{ "url": "morshansk", "slug": "ru-tam-morshansk" },
+			{ "url": "rasskazovo", "slug": "ru-tam-rasskazovo" },
+			{ "url": "uvarovo", "slug": "ru-tam-uvarovo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tambov", "slug": "tambov" }
+	},
+	"tyumen": {
+		"langs": [],
+		"cities": [
+			{ "url": "zavodoukovsk", "slug": "ru-tyu-zavodoukovsk" },
+			{ "url": "ishim", "slug": "ru-tyu-ishim" },
+			{ "url": "tobolsk", "slug": "ru-tyu-tobolsk" },
+			{ "url": "yalutorovsk", "slug": "ru-tyu-yalutorovsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tyumen", "slug": "tyumen" }
+	},
+	"magas": {
+		"langs": [],
+		"cities": [
+			{ "url": "karabulak", "slug": "ru-in-karabulak" },
+			{ "url": "malgobek", "slug": "ru-in-malgobek" },
+			{ "url": "nazran", "slug": "ru-in-nazran" },
+			{ "url": "sunzha", "slug": "ru-in-sunzha" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "magas", "slug": "magas" }
+	},
+	"cherkessk": {
+		"langs": [],
+		"cities": [
+			{ "url": "karachaevsk", "slug": "ru-kc-karachaevsk" },
+			{ "url": "teberda", "slug": "ru-kc-teberda" },
+			{ "url": "ust-dzheguta", "slug": "ru-kc-ust-dzheguta" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "cherkessk", "slug": "cherkessk" }
+	},
+	"omsk": {
+		"langs": [],
+		"cities": [
+			{ "url": "isilkul", "slug": "ru-oms-isilkul" },
+			{ "url": "kalachinsk", "slug": "ru-oms-kalachinsk" },
+			{ "url": "nazivaevsk", "slug": "ru-oms-nazivaevsk" },
+			{ "url": "tara", "slug": "ru-oms-tara" },
+			{ "url": "tyukalinsk", "slug": "ru-oms-tyukalinsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "omsk", "slug": "omsk" }
+	},
+	"magadan": {
+		"langs": [],
+		"cities": [{ "url": "susuman", "slug": "ru-mag-susuman" }],
+		"default-lang": "ru",
+		"default-city": { "url": "magadan", "slug": "magadan" }
+	},
+	"naryan-mar": {
+		"langs": [],
+		"cities": [],
+		"default-lang": "ru",
+		"default-city": { "url": "naryan-mar", "slug": "naryan-mar" }
+	},
+	"ryazan": {
+		"langs": [],
+		"cities": [
+			{ "url": "kasimov", "slug": "ru-rya-kasimov" },
+			{ "url": "korablino", "slug": "ru-rya-korablino" },
+			{ "url": "mihaylov", "slug": "ru-rya-mihaylov" },
+			{ "url": "novomichurinsk", "slug": "ru-rya-novomichurinsk" },
+			{ "url": "ryazhsk", "slug": "ru-rya-ryazhsk" },
+			{ "url": "ribnoe", "slug": "ru-rya-ribnoe" },
+			{ "url": "sasovo", "slug": "ru-rya-sasovo" },
+			{ "url": "skopin", "slug": "ru-rya-skopin" },
+			{ "url": "spas-klepiki", "slug": "ru-rya-spas-klepiki" },
+			{ "url": "spassk-ryazanskiy", "slug": "ru-rya-spassk-ryazanskiy" },
+			{ "url": "shack", "slug": "ru-rya-shack" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ryazan", "slug": "ryazan" }
+	},
+	"doneck": {
+		"langs": [],
+		"cities": [
+			{ "url": "makeevka", "slug": "ru-dnr-makeevka" },
+			{ "url": "enakievo", "slug": "enakievo" },
+			{ "url": "kirovskoe", "slug": "kirovskoe" },
+			{ "url": "garlovka", "slug": "ru-dnr-garlovka" },
+			{ "url": "snezhnoe", "slug": "snezhnoe" },
+			{ "url": "yasinovataya", "slug": "yasinovataya" },
+			{ "url": "torez", "slug": "torez" },
+			{ "url": "shahtyorsk", "slug": "shahtyorsk" },
+			{ "url": "mariupol", "slug": "ru-dnr-mariupol" },
+			{ "url": "volnovaha", "slug": "volnovaha" },
+			{ "url": "amvrosievka", "slug": "amvrosievka" },
+			{ "url": "ilovaysk", "slug": "ilovaysk" },
+			{ "url": "zugres", "slug": "zugres" },
+			{ "url": "dokuchaevsk", "slug": "dokuchaevsk" },
+			{ "url": "yunokommunarovsk", "slug": "yunokommunarovsk" },
+			{ "url": "zhdanovka", "slug": "zhdanovka" },
+			{ "url": "komsomolskoe", "slug": "komsomolskoe" },
+			{ "url": "soledar", "slug": "soledar" },
+			{ "url": "debalcevo", "slug": "debalcevo" },
+			{ "url": "uglegorsk-dnr", "slug": "uglegorsk-dnr" },
+			{ "url": "mospino", "slug": "mospino" },
+			{ "url": "novoazovsk", "slug": "novoazovsk" },
+			{ "url": "svetlodarsk", "slug": "svetlodarsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "doneck", "slug": "doneck" }
+	},
+	"taraz": {
+		"langs": [],
+		"cities": [
+			{ "url": "zhanatas", "slug": "kz-zha-zhanatas" },
+			{ "url": "karatau", "slug": "kz-zha-karatau" },
+			{ "url": "shu", "slug": "kz-zha-shu" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "taraz", "slug": "taraz" }
+	},
+	"vitebsk": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "orsha", "slug": "by-vi-orsha" },
+			{ "url": "novopolock", "slug": "by-vi-novopolock" },
+			{ "url": "postavi", "slug": "by-vi-postavi" },
+			{ "url": "glubokoe", "slug": "by-vi-glubokoe" },
+			{ "url": "novolukoml", "slug": "by-vi-novolukoml" },
+			{ "url": "polock", "slug": "by-vi-polock" },
+			{ "url": "gorodok", "slug": "by-vi-gorodok" },
+			{ "url": "lepel", "slug": "by-vi-lepel" },
+			{ "url": "tolochin", "slug": "by-vi-tolochin" },
+			{ "url": "dubrovno", "slug": "by-vi-dubrovno" },
+			{ "url": "baran", "slug": "by-vi-baran" },
+			{ "url": "braslav", "slug": "by-vi-braslav" },
+			{ "url": "chashniki", "slug": "by-vi-chashniki" },
+			{ "url": "verhnedvinsk", "slug": "by-vi-verhnedvinsk" },
+			{ "url": "miori", "slug": "by-vi-miori" },
+			{ "url": "dokshici", "slug": "by-vi-dokshici" },
+			{ "url": "senno", "slug": "by-vi-senno" },
+			{ "url": "disna", "slug": "by-vi-disna" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "vitebsk", "slug": "vitebsk" }
+	},
+	"gomel": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "zhlobin", "slug": "by-ho-zhlobin" },
+			{ "url": "rechica", "slug": "by-ho-rechica" },
+			{ "url": "kalinkovichi", "slug": "by-ho-kalinkovichi" },
+			{ "url": "mozir", "slug": "by-ho-mozir" },
+			{ "url": "svetlogorsk-ho", "slug": "by-ho-svetlogorsk" },
+			{ "url": "rogachyov", "slug": "by-ho-rogachyov" },
+			{ "url": "zhitkovichi", "slug": "by-ho-zhitkovichi" },
+			{ "url": "narovlya", "slug": "by-ho-narovlya" },
+			{ "url": "buda-koshelyovo", "slug": "by-ho-buda-koshelyovo" },
+			{ "url": "hoyniki", "slug": "by-ho-hoyniki" },
+			{ "url": "chechersk", "slug": "by-ho-chechersk" },
+			{ "url": "vetka", "slug": "by-ho-vetka" },
+			{ "url": "elsk", "slug": "by-ho-elsk" },
+			{ "url": "dobrush", "slug": "by-ho-dobrush" },
+			{ "url": "turov", "slug": "by-ho-turov" },
+			{ "url": "petrikov", "slug": "by-ho-petrikov" },
+			{ "url": "vasilevichi", "slug": "by-ho-vasilevichi" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "gomel", "slug": "gomel" }
+	},
+	"minsk": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "borisov", "slug": "by-mi-borisov" },
+			{ "url": "zhodino", "slug": "by-mi-zhodino" },
+			{ "url": "soligorsk", "slug": "by-mi-soligorsk" },
+			{ "url": "vileyka", "slug": "by-mi-vileyka" },
+			{ "url": "dzerzhinsk-mi", "slug": "by-mi-dzerzhinsk" },
+			{ "url": "marina-gorka", "slug": "by-mi-marina-gorka" },
+			{ "url": "stolbci", "slug": "by-mi-stolbci" },
+			{ "url": "smolevichi", "slug": "by-mi-smolevichi" },
+			{ "url": "berezino", "slug": "by-mi-berezino" },
+			{ "url": "fanipol", "slug": "by-mi-fanipol" },
+			{ "url": "nesvizh", "slug": "by-mi-nesvizh" },
+			{ "url": "lyuban-mi", "slug": "by-mi-lyuban" },
+			{ "url": "sluck", "slug": "by-mi-sluck" },
+			{ "url": "starie-dorogi", "slug": "by-mi-starie-dorogi" },
+			{ "url": "volozhin", "slug": "by-mi-volozhin" },
+			{ "url": "zaslavl", "slug": "by-mi-zaslavl" },
+			{ "url": "uzda", "slug": "by-mi-uzda" },
+			{ "url": "logoysk", "slug": "by-mi-logoysk" },
+			{ "url": "kleck", "slug": "by-mi-kleck" },
+			{ "url": "krupki", "slug": "by-mi-krupki" },
+			{ "url": "molodechno", "slug": "by-mi-molodechno" },
+			{ "url": "kopil", "slug": "by-mi-kopil" },
+			{ "url": "cherven", "slug": "by-mi-cherven" },
+			{ "url": "myadel", "slug": "by-mi-myadel" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "minsk", "slug": "minsk" }
+	},
+	"grodno": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "lida", "slug": "by-hr-lida" },
+			{ "url": "slonim", "slug": "by-hr-slonim" },
+			{ "url": "volkovisk", "slug": "by-hr-volkovisk" },
+			{ "url": "smorgon", "slug": "by-hr-smorgon" },
+			{ "url": "mosti", "slug": "by-hr-mosti" },
+			{ "url": "oshmyani", "slug": "by-hr-oshmyani" },
+			{ "url": "skidel", "slug": "by-hr-skidel" },
+			{ "url": "shhuchin", "slug": "by-hr-shhuchin" },
+			{ "url": "ostrovec", "slug": "by-hr-ostrovec" },
+			{ "url": "ive", "slug": "by-hr-ive" },
+			{ "url": "novogrudok", "slug": "by-hr-novogrudok" },
+			{ "url": "dyatlovo", "slug": "by-hr-dyatlovo" },
+			{ "url": "beryozovka", "slug": "by-hr-beryozovka" },
+			{ "url": "svisloch", "slug": "by-hr-svisloch" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "grodno", "slug": "grodno" }
+	},
+	"mogilyov": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "bobruysk", "slug": "by-ma-bobruysk" },
+			{ "url": "klimovichi", "slug": "by-ma-klimovichi" },
+			{ "url": "bihov", "slug": "by-ma-bihov" },
+			{ "url": "gorki", "slug": "by-ma-gorki" },
+			{ "url": "krichev", "slug": "by-ma-krichev" },
+			{ "url": "shklov", "slug": "by-ma-shklov" },
+			{ "url": "cherikov", "slug": "by-ma-cherikov" },
+			{ "url": "chausi", "slug": "by-ma-chausi" },
+			{ "url": "kostyukovichi", "slug": "by-ma-kostyukovichi" },
+			{ "url": "osipovichi", "slug": "by-ma-osipovichi" },
+			{ "url": "mstislavl", "slug": "by-ma-mstislavl" },
+			{ "url": "kirovsk-ma", "slug": "by-ma-kirovsk" },
+			{ "url": "slavgorod-ma", "slug": "by-ma-slavgorod" },
+			{ "url": "belinichi", "slug": "by-ma-belinichi" },
+			{ "url": "klichev", "slug": "by-ma-klichev" },
+			{ "url": "krugloe", "slug": "by-ma-krugloe" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "mogilyov", "slug": "mogilyov" }
+	},
+	"brest": {
+		"langs": ["by"],
+		"cities": [
+			{ "url": "kobrin", "slug": "by-br-kobrin" },
+			{ "url": "beryoza", "slug": "by-br-beryoza" },
+			{ "url": "baranovichi", "slug": "by-br-baranovichi" },
+			{ "url": "pinsk", "slug": "by-br-pinsk" },
+			{ "url": "luninec", "slug": "by-br-luninec" },
+			{ "url": "ivacevichi", "slug": "by-br-ivacevichi" },
+			{ "url": "ivanovo-br", "slug": "by-br-ivanovo" },
+			{ "url": "gancevichi", "slug": "by-br-gancevichi" },
+			{ "url": "drogichin", "slug": "by-br-drogichin" },
+			{ "url": "stolin", "slug": "by-br-stolin" },
+			{ "url": "lyahovichi", "slug": "by-br-lyahovichi" },
+			{ "url": "mikashevichi", "slug": "by-br-mikashevichi" },
+			{ "url": "malorita", "slug": "by-br-malorita" },
+			{ "url": "pruzhani", "slug": "by-br-pruzhani" },
+			{ "url": "zhabinka", "slug": "by-br-zhabinka" },
+			{ "url": "david-gorodok", "slug": "by-br-david-gorodok" },
+			{ "url": "visokoe", "slug": "by-br-visokoe" },
+			{ "url": "kamenec", "slug": "by-br-kamenec" },
+			{ "url": "beloozyorsk", "slug": "by-br-beloozyorsk" },
+			{ "url": "kossovo", "slug": "by-br-kossovo" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "brest", "slug": "brest" }
+	},
+	"karaganda": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "abay", "slug": "kz-kar-abay" },
+			{ "url": "balhash", "slug": "kz-kar-balhash" },
+			{ "url": "karkaralinsk", "slug": "kz-kar-karkaralinsk" },
+			{ "url": "karazhal", "slug": "kz-kar-karazhal" },
+			{ "url": "satpaev", "slug": "kz-kar-satpaev" },
+			{ "url": "priozyorsk-kar", "slug": "kz-kar-priozyorsk" },
+			{ "url": "saran", "slug": "kz-kar-saran" },
+			{ "url": "temirtau", "slug": "kz-kar-temirtau" },
+			{ "url": "shahtinsk", "slug": "kz-kar-shahtinsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "karaganda", "slug": "karaganda" }
+	},
+	"uralsk": {
+		"langs": ["kz"],
+		"cities": [{ "url": "aksay-zap", "slug": "kz-zap-aksay" }],
+		"default-lang": "ru",
+		"default-city": { "url": "uralsk", "slug": "uralsk" }
+	},
+	"pavlodar": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "aksu", "slug": "kz-pav-aksu" },
+			{ "url": "ekibastuz", "slug": "kz-pav-ekibastuz" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "pavlodar", "slug": "pavlodar" }
+	},
+	"aktau": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "zhanaozen", "slug": "kz-man-zhanaozen" },
+			{ "url": "fort-shevchenko", "slug": "kz-man-fort-shevchenko" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "aktau", "slug": "aktau" }
+	},
+	"astana": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "akkol", "slug": "kz-akm-akkol" },
+			{ "url": "atbasar", "slug": "kz-akm-atbasar" },
+			{ "url": "derzhavinsk", "slug": "kz-akm-derzhavinsk" },
+			{ "url": "ereymentau", "slug": "kz-akm-ereymentau" },
+			{ "url": "esil", "slug": "kz-akm-esil" },
+			{ "url": "kokshetau", "slug": "kz-akm-kokshetau" },
+			{ "url": "kosshi", "slug": "kz-akm-kosshi" },
+			{ "url": "makinsk", "slug": "kz-akm-makinsk" },
+			{ "url": "stepnogorsk", "slug": "kz-akm-stepnogorsk" },
+			{ "url": "stepnyak", "slug": "kz-akm-stepnyak" },
+			{ "url": "shhuchinsk", "slug": "kz-akm-shhuchinsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "astana", "slug": "astana" }
+	},
+	"kizilorda": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "baykonur", "slug": "kz-kzy-baykonur" },
+			{ "url": "aralsk", "slug": "kz-kzy-aralsk" },
+			{ "url": "kazalinsk", "slug": "kz-kzy-kazalinsk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kizilorda", "slug": "kizilorda" }
+	},
+	"aktobe": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "alga", "slug": "kz-akt-alga" },
+			{ "url": "kandiagash", "slug": "kz-akt-kandiagash" },
+			{ "url": "zhem", "slug": "kz-akt-zhem" },
+			{ "url": "temir", "slug": "kz-akt-temir" },
+			{ "url": "hromtau", "slug": "kz-akt-hromtau" },
+			{ "url": "shalkar", "slug": "kz-akt-shalkar" },
+			{ "url": "emba", "slug": "kz-akt-emba" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "aktobe", "slug": "aktobe" }
+	},
+	"shymkent": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "aris", "slug": "kz-yuz-aris" },
+			{ "url": "zhetisay", "slug": "kz-yuz-zhetisay" },
+			{ "url": "kentau", "slug": "kz-yuz-kentau" },
+			{ "url": "lenger", "slug": "kz-yuz-lenger" },
+			{ "url": "sariagash", "slug": "kz-yuz-sariagash" },
+			{ "url": "turkestan", "slug": "kz-yuz-turkestan" },
+			{ "url": "ardara", "slug": "kz-yuz-ardara" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "shymkent", "slug": "shymkent" }
+	},
+	"kostanay": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "arkalik", "slug": "kz-kus-arkalik" },
+			{ "url": "zhitikara", "slug": "kz-kus-zhitikara" },
+			{ "url": "lisakovsk", "slug": "kz-kus-lisakovsk" },
+			{ "url": "rudniy", "slug": "kz-kus-rudniy" },
+			{ "url": "tobil", "slug": "kz-kus-tobil" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "kostanay", "slug": "kostanay" }
+	},
+	"ust-kamenogorsk": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "ayagoz", "slug": "kz-vos-ayagoz" },
+			{ "url": "zaysan", "slug": "kz-vos-zaysan" },
+			{ "url": "altay", "slug": "kz-vos-altay" },
+			{ "url": "serebryansk", "slug": "kz-vos-serebryansk" },
+			{ "url": "kurchatov-vos", "slug": "kz-vos-kurchatov" },
+			{ "url": "ridder", "slug": "kz-vos-ridder" },
+			{ "url": "shemonaiha", "slug": "kz-vos-shemonaiha" },
+			{ "url": "shar", "slug": "kz-vos-shar" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "ust-kamenogorsk", "slug": "ust-kamenogorsk" }
+	},
+	"petropavlovsk": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "bulaevo", "slug": "kz-sev-bulaevo" },
+			{ "url": "mamlyutka", "slug": "kz-sev-mamlyutka" },
+			{ "url": "sergeevka", "slug": "kz-sev-sergeevka" },
+			{ "url": "tayinsha", "slug": "kz-sev-tayinsha" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "petropavlovsk", "slug": "petropavlovsk" }
+	},
+	"taldikorgan": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "esik", "slug": "kz-alm-esik" },
+			{ "url": "zharkent", "slug": "kz-alm-zharkent" },
+			{ "url": "kaskelen", "slug": "kz-alm-kaskelen" },
+			{ "url": "konaev", "slug": "kz-alm-konaev" },
+			{ "url": "sarkand", "slug": "kz-alm-sarkand" },
+			{ "url": "talgar", "slug": "kz-alm-talgar" },
+			{ "url": "tekeli", "slug": "kz-alm-tekeli" },
+			{ "url": "usharal", "slug": "kz-alm-usharal" },
+			{ "url": "ushtobe", "slug": "kz-alm-ushtobe" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "taldikorgan", "slug": "taldikorgan" }
+	},
+	"atirau": {
+		"langs": ["kz"],
+		"cities": [{ "url": "kulsari", "slug": "kz-aty-kulsari" }],
+		"default-lang": "ru",
+		"default-city": { "url": "atirau", "slug": "atirau" }
+	},
+	"buhara": {
+		"langs": ["kz"],
+		"cities": [
+			{ "url": "kagan", "slug": "uzb-kagan" },
+			{ "url": "gidzhuvan", "slug": "uzb-gidzhuvan" },
+			{ "url": "shafirkan", "slug": "uzb-shafirkan" },
+			{ "url": "karakul", "slug": "uzb-karakul" },
+			{ "url": "toytepa", "slug": "uzb-toytepa" },
+			{ "url": "vabkent", "slug": "uzb-vabkent" },
+			{ "url": "galaasiya", "slug": "uzb-galaasiya" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "buhara", "slug": "buhara" }
+	},
+	"lugansk": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "krasny-luch", "slug": "krasny-luch" },
+			{ "url": "severodoneck", "slug": "severodoneck" },
+			{ "url": "alchevsk", "slug": "alchevsk" },
+			{ "url": "sverdlovsk", "slug": "sverdlovsk" },
+			{ "url": "rovenki", "slug": "rovenki" },
+			{ "url": "antracit", "slug": "antracit" },
+			{ "url": "bryanka", "slug": "bryanka" },
+			{ "url": "pervomaysk-lnr", "slug": "pervomaysk-lnr" },
+			{ "url": "rubezhnoe", "slug": "rubezhnoe" },
+			{ "url": "krasnodon", "slug": "krasnodon" },
+			{ "url": "lisichansk", "slug": "lisichansk" },
+			{ "url": "perevalsk", "slug": "perevalsk" },
+			{ "url": "stahanov", "slug": "stahanov" },
+			{ "url": "popasnaya", "slug": "popasnaya" },
+			{ "url": "molodogvardeysk", "slug": "molodogvardeysk" },
+			{ "url": "suhodolsk", "slug": "suhodolsk" },
+			{ "url": "lutugino", "slug": "lutugino" },
+			{ "url": "svatovo", "slug": "svatovo" },
+			{ "url": "kirovsk-lnr", "slug": "kirovsk-lnr" },
+			{ "url": "kremennaya", "slug": "kremennaya" },
+			{ "url": "vahrushevo", "slug": "vahrushevo" },
+			{ "url": "starobelsk", "slug": "starobelsk" },
+			{ "url": "zolotoe", "slug": "zolotoe" },
+			{ "url": "schaste", "slug": "schaste" },
+			{ "url": "zimogore", "slug": "zimogore" },
+			{ "url": "zorinsk", "slug": "zorinsk" },
+			{ "url": "gorskoe", "slug": "gorskoe" },
+			{ "url": "chervonopartizansk", "slug": "chervonopartizansk" },
+			{ "url": "petrovskoe", "slug": "petrovskoe" },
+			{ "url": "miusinsk", "slug": "miusinsk" },
+			{ "url": "artemovsk-lnr", "slug": "artemovsk-lnr" },
+			{ "url": "almaznaya", "slug": "almaznaya" },
+			{ "url": "privole", "slug": "privole" },
+			{ "url": "aleksandrovsk-lnr", "slug": "aleksandrovsk-lnr" },
+			{ "url": "novodruzhesk", "slug": "novodruzhesk" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "lugansk", "slug": "lugansk" }
+	},
+	"namangan": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "chust", "slug": "uzb-chust" },
+			{ "url": "kasansaj", "slug": "uzb-kasansaj" },
+			{ "url": "chartak", "slug": "uzb-chartak" },
+			{ "url": "uychi", "slug": "uzb-uychi" },
+			{ "url": "uchkurgan", "slug": "uzb-uchkurgan" },
+			{ "url": "tashbulak", "slug": "uzb-tashbulak" },
+			{ "url": "turakurgan", "slug": "uzb-turakurgan" },
+			{ "url": "yangikurgan", "slug": "uzb-yangikurgan" },
+			{ "url": "hakkulabad", "slug": "uzb-hakkulabad" },
+			{ "url": "pap", "slug": "uzb-pap" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "namangan", "slug": "namangan" }
+	},
+	"samarkand": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "kattakurgan", "slug": "uzb-kattakurgan" },
+			{ "url": "urgut", "slug": "uzb-urgut" },
+			{ "url": "aktash", "slug": "uzb-aktash" },
+			{ "url": "bulungur", "slug": "uzb-bulungur" },
+			{ "url": "kirguli", "slug": "uzb-kirguli" },
+			{ "url": "payshanba", "slug": "uzb-payshanba" },
+			{ "url": "dzhuma", "slug": "uzb-dzhuma" },
+			{ "url": "chelek", "slug": "uzb-chelek" },
+			{ "url": "dzhambaj", "slug": "uzb-dzhambaj" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "samarkand", "slug": "samarkand" }
+	},
+	"andizhan": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "asaka", "slug": "uzb-asaka" },
+			{ "url": "kurgantepa", "slug": "uzb-kurgantepa" },
+			{ "url": "hodzhaabad", "slug": "uzb-hodzhaabad" },
+			{ "url": "marhamat", "slug": "uzb-marhamat" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "andizhan", "slug": "andizhan" }
+	},
+	"nukus": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "altynkul", "slug": "uzb-altynkul" },
+			{ "url": "turtkul", "slug": "uzb-turtkul" },
+			{ "url": "hodzhejli", "slug": "uzb-hodzhejli" },
+			{ "url": "berunij", "slug": "uzb-berunij" },
+			{ "url": "mangit", "slug": "uzb-mangit" },
+			{ "url": "kegejli", "slug": "uzb-kegejli" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "nukus", "slug": "nukus" }
+	},
+	"tashkent": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "chirchik", "slug": "uzb-chirchik" },
+			{ "url": "bekabad", "slug": "uzb-bekabad" },
+			{ "url": "almalyk", "slug": "uzb-almalyk" },
+			{ "url": "yangiyul", "slug": "uzb-yangiyul" },
+			{ "url": "angren", "slug": "uzb-angren" },
+			{ "url": "parkent", "slug": "uzb-parkent" },
+			{ "url": "ahangaran", "slug": "uzb-ahangaran" },
+			{ "url": "iskandar", "slug": "uzb-iskandar" },
+			{ "url": "kirbay", "slug": "uzb-kirbay" },
+			{ "url": "pskent", "slug": "uzb-pskent" },
+			{ "url": "salar", "slug": "uzb-salar" },
+			{ "url": "bektemir", "slug": "uzb-bektemir" },
+			{ "url": "yangiabad", "slug": "uzb-yangiabad" },
+			{ "url": "zafar", "slug": "uzb-zafar" },
+			{ "url": "chinaz", "slug": "uzb-chinaz" },
+			{ "url": "gazalkent", "slug": "uzb-gazalkent" },
+			{ "url": "buka", "slug": "uzb-buka" },
+			{ "url": "urtaaul", "slug": "uzb-urtaaul" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "tashkent", "slug": "tashkent" }
+	},
+	"karshi": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "shahrisabz", "slug": "uzb-shahrisabz" },
+			{ "url": "kitob", "slug": "uzb-kitob" },
+			{ "url": "koson", "slug": "uzb-koson" },
+			{ "url": "mubarek", "slug": "uzb-mubarek" },
+			{ "url": "guzar", "slug": "uzb-guzar" },
+			{ "url": "beshkent", "slug": "uzb-beshkent" },
+			{ "url": "chirakchi", "slug": "uzb-chirakchi" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "karshi", "slug": "karshi" }
+	},
+	"urgench": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "hiva", "slug": "uzb-hiva" },
+			{ "url": "gurlen", "slug": "uzb-gurlen" },
+			{ "url": "shavat", "slug": "uzb-shavat" },
+			{ "url": "koshkupyr", "slug": "uzb-koshkupyr" },
+			{ "url": "hazarasp", "slug": "uzb-hazarasp" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "urgench", "slug": "urgench" }
+	},
+	"dzhizak": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "zaamin", "slug": "uzb-zaamin" },
+			{ "url": "gagarin-uzb", "slug": "uzb-gagarin-uzb" },
+			{ "url": "pahtakor", "slug": "uzb-pahtakor" },
+			{ "url": "dashtabad", "slug": "uzb-dashtabad" },
+			{ "url": "dustlik", "slug": "uzb-dustlik" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "dzhizak", "slug": "dzhizak" }
+	},
+	"fergana": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "kokand", "slug": "uzb-kokand" },
+			{ "url": "margilan", "slug": "uzb-margilan" },
+			{ "url": "kuva", "slug": "uzb-kuva" },
+			{ "url": "kuvasay", "slug": "uzb-kuvasay" },
+			{ "url": "tashlak", "slug": "uzb-tashlak" },
+			{ "url": "altyaryk", "slug": "uzb-altyaryk" },
+			{ "url": "besharyk", "slug": "uzb-besharyk" },
+			{ "url": "yaypan", "slug": "uzb-yaypan" },
+			{ "url": "yangi-margilan", "slug": "uzb-yangi-margilan" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "fergana", "slug": "fergana" }
+	},
+	"termez": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "denov", "slug": "uzb-denov" },
+			{ "url": "baysun", "slug": "uzb-baysun" },
+			{ "url": "shurchi", "slug": "uzb-shurchi" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "termez", "slug": "termez" }
+	},
+	"navoi": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "nurota", "slug": "uzb-nurota" },
+			{ "url": "yangirabat", "slug": "uzb-yangirabat" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "navoi", "slug": "navoi" }
+	},
+	"gulistan": {
+		"langs": ["uz"],
+		"cities": [
+			{ "url": "yangier", "slug": "uzb-yangier" },
+			{ "url": "syrdarya", "slug": "uzb-syrdarya" }
+		],
+		"default-lang": "ru",
+		"default-city": { "url": "gulistan", "slug": "gulistan" }
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cards_text_cards",
+  "info": {
+    "displayName": "base",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    }
+  }
+}

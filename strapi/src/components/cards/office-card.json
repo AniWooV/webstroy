@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cards_office_cards",
+  "info": {
+    "displayName": "office",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    }
+  }
+}

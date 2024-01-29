@@ -876,6 +876,7 @@ export interface ApiMetaMeta extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    page: Attribute.Relation<'api::meta.meta', 'oneToOne', 'api::page.page'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -887,6 +888,46 @@ export interface ApiMetaMeta extends Schema.CollectionType {
       'api::meta.meta',
       'oneToMany',
       'api::meta.meta'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiPagePage extends Schema.CollectionType {
+  collectionName: 'pages';
+  info: {
+    singularName: 'page';
+    pluralName: 'pages';
+    displayName: 'Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    meta: Attribute.Relation<'api::page.page', 'oneToOne', 'api::meta.meta'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::page.page',
+      'oneToMany',
+      'api::page.page'
     >;
     locale: Attribute.String;
   };
@@ -974,6 +1015,7 @@ declare module '@strapi/types' {
       'api::country.country': ApiCountryCountry;
       'api::init.init': ApiInitInit;
       'api::meta.meta': ApiMetaMeta;
+      'api::page.page': ApiPagePage;
       'api::region.region': ApiRegionRegion;
     }
   }

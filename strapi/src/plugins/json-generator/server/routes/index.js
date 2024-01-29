@@ -26,4 +26,22 @@ module.exports = [
       auth: false,
     },
   },
+  {
+    method: 'DELETE',
+    path: '/regions',
+    handler: 'generator.deleteRegionsAll',
+    config: {
+      policies: [],
+      auth: false,
+    },
+  },
+  {
+    method: 'DELETE',
+    path: '/cities',
+    handler: 'generator.deleteCitiesAll',
+    config: {
+      policies: [],
+      auth: false,
+    },
+  },
 ];
